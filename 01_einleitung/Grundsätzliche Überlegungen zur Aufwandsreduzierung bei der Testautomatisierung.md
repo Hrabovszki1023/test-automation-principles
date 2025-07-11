@@ -1,4 +1,3 @@
-# Grundsätzliche Überlegungen zur Aufwandsreduzierung bei der Testautomatisierung
 * Wie oft muss ich bei einer Änderung etwas machen?
 * Wie kann eine Änderung auf eine Stelle reduziert werden?
 * Reduktion auf eine Stelle ist grundsätzlich möglich!
