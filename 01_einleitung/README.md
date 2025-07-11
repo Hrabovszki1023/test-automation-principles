@@ -1,8 +1,17 @@
-# test-automation-principles
-Core principles of successful test automation for long-term maintainability and value
+# Warum dieser ganze Aufwand?
 
-## License
+Testautomatisierung klingt erstmal cool: Einmal klicken, Kaffee holen, und der Rechner prüft brav alles durch. In der Praxis sieht’s aber oft anders aus: Fragile Tests, unverständliche Skripte und ständiges Nachbessern. Warum ist das so?
 
-This work is licensed under the [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/).
+In diesem Abschnitt schauen wir uns an, **woher der Aufwand eigentlich kommt** – und was man dagegen tun kann:
 
-© 2025 Zoltán Hrabovszki – [www.openkeyword.de](https://www.openkeyword.de)
+- Warum Tests oft nicht wiederverwendbar sind.
+- Wieso kleine Änderungen an der Software plötzlich große Testprobleme machen.
+- Warum gute Absichten (und Copy & Paste) selten zu wartbaren Tests führen.
+- Und warum Entwickler manchmal auf Unit-Tests verzichten – obwohl sie es besser wissen.
+
+Ziel ist es, ein Gefühl für typische Probleme und Stolperfallen zu bekommen.  
+Denn wer das versteht, kann später die passenden Prinzipien und Techniken gezielt einsetzen.
+
+---
+
+➡️ Die späteren Kapitel liefern dann konkrete Werkzeuge, Prinzipien und Beispiele, wie man den Testaufwand **radikal senken** kann – und dabei sogar stabilere Tests bekommt.
