@@ -1,0 +1,1 @@
+[Kovács Attila és Forgács István: Practical Test Design - YouTube](https://www.youtube.com/watch?v=_eaZYI5VqB0&ab_channel=HungarianTestingBoard-MagyarSzoftvertesztel%C5%91iTan%C3%A1csEgyes%C3%BClet)

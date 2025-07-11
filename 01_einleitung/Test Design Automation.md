@@ -1,0 +1,1 @@
+[Test Design Automation – Bloor Research](https://www.bloorresearch.com/technology/test-design-automation/#whatnext)

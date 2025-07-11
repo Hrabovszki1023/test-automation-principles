@@ -1,0 +1,3 @@
+#Doctype/Zitat
+> [[Clean Code]] ist ein Begriff aus der Softwaretechnik, der seinen Ursprung im gleichnamigen Buch von [[Robert C. Martin]] hat. Als „sauber“ bezeichnen Software-Entwickler in erster Linie den Quellcode, aber auch Dokumente, Konzepte, Regeln und Verfahren, die intuitiv verständlich sind. Als intuitiv verständlich gilt alles, was mit wenig Aufwand und in kurzer Zeit richtig verstanden werden kann. Vorteile von Clean Code sind stabilere und effizient wartbarere Programme, d. h. kürzere Entwicklungszeiten bei Funktionserweiterung und Fehlerbehebungen. Die Bedeutung wächst mit der Beobachtung, dass im Schnitt 80 % der Lebensdauer einer Software auf den Wartungszeitraum entfällt. (Aus Wikipedia: http://de.wikipedia.org/wiki/Clean_Code)
+^dd9eb9
