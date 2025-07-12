@@ -61,20 +61,3 @@ sondern **ob du ihn jedes Mal neu hast oder nur ein einziges Mal**.
 Und genau hier liegt der Schlüssel zur effizienten Testautomatisierung.
 
 ---
-
-## ✅ Vorschlag zum weiteren Vorgehen
-
-- **Dateiname:** `01_einleitung/Grundsätzliche Überlegungen zur Aufwandsreduzierung.md`
-    
-- **Titel in GitBook-Menu:** "Aufwand verstehen"
-    
-- **Interner Link von der Einleitung:**  
-    Am Ende der Einleitung ein Satz wie:
-    
-    > 🔍 _Mehr zur Frage, woher der Aufwand eigentlich kommt: [Aufwand verstehen](https://chatgpt.com/c/Grunds%C3%A4tzliche%20%C3%9Cberlegungen%20zur%20Aufwandsreduzierung.md)_
-    
-
----
-
-Möchtest du den Text so übernehmen und pushbereit machen?  
-Oder sollen wir noch etwas ergänzen (z. B. ein kurzes Beispiel oder Schema)?
