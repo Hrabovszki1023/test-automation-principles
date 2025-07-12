@@ -1,4 +1,4 @@
-# # DRY-Prinzip: Keine Übersetzung nötig
+# DRY-Prinzip: Keine Übersetzung nötig
 ## Wie Schlüsselwörter die Brücke zwischen Fachtest und Automatisierung schlagen
 
 Die beste Möglichkeit, Aufwand zu vermeiden?  
