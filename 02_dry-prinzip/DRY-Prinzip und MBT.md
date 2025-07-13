@@ -1,4 +1,4 @@
-Im Kontext des Modellbasierten Testens (MBT) kann das [[DRY-Prinzip]] (Don't Repeat Yourself) auf verschiedene Weisen angewendet werden, um Effizienz, Wartbarkeit und Konsistenz zu fördern. Hier sind einige Ansätze, wie das DRY-Prinzip im Modellbasierten Testen umgesetzt werden kann:
+Im Kontext des Modellbasierten Testens (MBT) kann das [[inhalt/02_dry-prinzip/README]] (Don't Repeat Yourself) auf verschiedene Weisen angewendet werden, um Effizienz, Wartbarkeit und Konsistenz zu fördern. Hier sind einige Ansätze, wie das DRY-Prinzip im Modellbasierten Testen umgesetzt werden kann:
 
 1. **Wiederverwendung von Modellen:** Erstellen Sie abstrakte Modelle, die wiederholt in verschiedenen Testfällen verwendet werden können. Diese Modelle sollten allgemeine Funktionen oder Abläufe repräsentieren und in verschiedenen Testfällen wiederverwendet werden, um Redundanz zu vermeiden.
     

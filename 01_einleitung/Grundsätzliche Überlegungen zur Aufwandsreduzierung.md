@@ -1,4 +1,9 @@
-
+---
+status: In Bearbeitung
+tags: [lokatoren, dry, gui]
+kapitel: Testfallstruktur
+autor: Zoltán Hrabovszki
+---
 ---
 
 ## Aufwand? Kommt drauf an, _wo_ du änderst

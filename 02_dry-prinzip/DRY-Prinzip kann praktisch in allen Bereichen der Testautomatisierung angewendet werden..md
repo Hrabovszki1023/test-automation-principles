@@ -1,4 +1,4 @@
-[[DRY-Prinzip]] (Don't Repeat Yourself) kann in verschiedenen Bereichen der Testautomatisierung angewendet werden, um Effizienz, Wartbarkeit und Konsistenz zu verbessern. Hier sind einige Bereiche, in denen das DRY-Prinzip in der Testautomatisierung besonders relevant ist:
+[[inhalt/02_dry-prinzip/README]] (Don't Repeat Yourself) kann in verschiedenen Bereichen der Testautomatisierung angewendet werden, um Effizienz, Wartbarkeit und Konsistenz zu verbessern. Hier sind einige Bereiche, in denen das DRY-Prinzip in der Testautomatisierung besonders relevant ist:
 
 1. **Testskripte:** Vermeiden Sie die Wiederholung von Code in verschiedenen Testskripten. Statt denselben Code mehrfach zu schreiben, sollten gemeinsam genutzte Funktionen und Bibliotheken erstellt werden, die von verschiedenen Testskripten aufgerufen werden können.
     
