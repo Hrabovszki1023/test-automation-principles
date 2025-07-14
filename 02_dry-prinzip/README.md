@@ -74,6 +74,24 @@ Und genau deshalb ist das DRY-Prinzip so wichtig:
 
 ---
 
+## DRY – und dann noch ein Schritt weiter
+
+Das DRY-Prinzip hilft, überflüssige Wiederholungen zu vermeiden.
+Aber manchmal geht noch mehr: Man kann Dinge **komplett weglassen**.
+
+> 🧠 **„The best part is no part.“**
+> – Elon Musk, bei der Vorstellung des Raptor-3-Triebwerks
+
+Was in der Raumfahrt gilt, lässt sich auch auf Tests übertragen:
+**Was du nicht brauchst, kann nicht kaputtgehen.**
+Jede unnötige Abhängigkeit, jeder doppelte Schritt, jede manuelle Konfiguration – all das ist eine potenzielle Fehlerquelle.
+
+Deshalb lohnt sich beim Testdesign immer auch die Frage:
+*Muss das wirklich sein?*
+Oder gibt es eine Möglichkeit, diesen Teil ganz zu eliminieren?
+
+---
+
 ## Was dich in diesem Kapitel erwartet
 
 In den folgenden Artikeln zeigen wir, wie sich das DRY-Prinzip konkret in der Testautomatisierung umsetzen lässt – mit Fokus auf:
