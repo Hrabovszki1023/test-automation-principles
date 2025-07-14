@@ -1,13 +1,20 @@
 ---
-title: "DRY-Prinzip – Wiederholung vermeiden, Wartung erleichtern"
-description: "Warum das DRY-Prinzip für nachhaltige Testautomatisierung unverzichtbar ist – und wie man es konkret umsetzt."
-tags: [dry, prinzipien, wartbarkeit, testautomatisierung, technikensammlung]
+title: DRY-Prinzip – Wiederholung vermeiden, Wartung erleichtern
+description: Warum das DRY-Prinzip für nachhaltige Testautomatisierung unverzichtbar ist – und wie man es konkret umsetzt.
+tags:
+  - dry
+  - prinzipien
+  - wartbarkeit
+  - testautomatisierung
+  - technikensammlung
 status: fertig
 type: kapitel
 sidebar_position: 2
-editors: [zoltan]
+editors:
+  - zoltan
 created: 2025-07-13
 updated: 2025-07-13
+rolle: Kapitelübersicht
 ---
 
 # Kapitel: DRY-Prinzip – Wiederholung vermeiden, Wartung erleichtern

@@ -1,3 +1,7 @@
+---
+rolle: Kapitelübersicht
+---
+
 # Warum dieser ganze Aufwand?
 
 Testautomatisierung klingt erstmal cool: Einmal klicken, Kaffee holen, und der Rechner prüft brav alles durch.  
