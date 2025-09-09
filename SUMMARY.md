@@ -2,8 +2,8 @@
 
 - [Einleitung](01_einleitung/README.md)
 - [DRY-Prinzip](02_dry_prinzip/README.md)
-  - [Warum dry wichtig](02_dry-prinzip/Uebliche_Vorgehensweise.md)
-  - [Uebersetzungen vermeiden](02_dry-prinzip/Keine_Uebersetzung_noetig.md)
+  - [Übliche Vorgehensweise](02_dry-prinzip/Uebliche_Vorgehensweise.md)
+  - [Übersetzungen vermeiden](02_dry-prinzip/Keine_Uebersetzung_noetig.md)
   - [Abstrakte und Elementare Schlüsselwörter](02_dry-prinzip/Abstrakte_und_elementare_Schluesselwoerter.md)
 - [Beobachtbarkeit/Steurbarkeit](03_beobachtbarkeit-steuerbarkeit/README.md)
 - [Testfallstruktur und Abstarktion](04_testfallstruktur-und-abstraktion/README.md)
