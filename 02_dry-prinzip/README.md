@@ -68,11 +68,13 @@ Weil es genau beschreibt, was in der Testautomatisierung ständig passiert:
 Wir versuchen Probleme (z. B. kaputte Locators, redundante Testschritte) auf derselben Ebene zu flicken, auf der sie entstanden sind – mit noch mehr Copy & Paste, mit Workarounds, mit Auto-Healing-Zauberei.  
 Das ist so, als würde man einen Brand mit Benzin löschen wollen.
 
-Die Lösung liegt eine Ebene höher: **Abstraktion.**  
-Statt jeden konkreten XPath zehnmal zu wiederholen, führen wir *eine abstrakte Definition* ein.  
-Statt Testschritte wild zusammenzukopieren, nutzen wir *Schlüsselwörter*.  
+Die Lösung liegt eine Ebene höher: **Abstraktion.** 
+
+ - Statt jeden konkreten XPath zehnmal zu wiederholen, führen wir *eine abstrakte Definition* ein.  
+ - Statt Testschritte wild zusammenzukopieren, nutzen wir *Schlüsselwörter*.  
+
 So verschieben wir das Problem auf eine Meta-Ebene, wo es sich viel eleganter und nachhaltiger lösen lässt.
-![[einstein_dry_pyramide.svg]]
+![[../assets/diagrams/dry-prinzip/einstein_dry_pyramide.svg]]
 Genau hier setzt das DRY-Prinzip an:
 **Nicht die Symptome reparieren, sondern die Ursache beseitigen – durch weniger Redundanz und mehr Abstraktion.**
 
