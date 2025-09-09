@@ -75,7 +75,7 @@ Die Lösung liegt eine Ebene höher: **Abstraktion.**
 
 So verschieben wir das Problem auf eine Meta-Ebene, wo es sich viel eleganter und nachhaltiger lösen lässt.
 
-![](../assets/diagrams/dry-prinzip/einstein_dry_pyramide.png)
+![](../assets/diagrams/dry-prinzip/einstein_dry_pyramide.svg)
 
 Genau hier setzt das DRY-Prinzip an:
 **Nicht die Symptome reparieren, sondern die Ursache beseitigen – durch weniger Redundanz und mehr Abstraktion.**
