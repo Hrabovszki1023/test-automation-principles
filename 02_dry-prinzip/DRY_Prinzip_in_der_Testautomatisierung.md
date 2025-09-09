@@ -1,6 +1,6 @@
 ---
 title: DRY-Prinzip in der Testautomatisierung
-description: .
+description: Erster Überblick und die Motivation, warum DRY in der Automatisierung so eine bedeutende Rolle hat .
 tags:
   - dry
   - testautomatisierung
@@ -13,6 +13,8 @@ updated: 2025-08-11
 rolle: Inhalt
 kapitel: DRY-Prinzip
 ---
+
+## Motivation
 
 Das DRY-Prinzip kann ebenfalls dazu beitragen, den Aufwand in der Testautomatisierung zu reduzieren. Das DRY-Prinzip besagt, dass Informationen in einem System nur an einer Stelle definiert werden sollten. Wenn Code oder Daten an mehreren Stellen wiederholt werden, kann dies zu Redundanz, erhöhtem Wartungsaufwand und einem höheren Risiko von Fehlern führen.
 
