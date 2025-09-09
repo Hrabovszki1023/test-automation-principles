@@ -54,7 +54,7 @@ rolle: Kapitelübersicht
 # - Beobachtbarkeit & Steuerbarkeit
 # - Test-Denkmodelle
 # - GUI-Strategien
-kapitel: DRY-Prinzip
+kapitel: Einleitung
 ---
 
 ## Warum dieser ganze Aufwand?
