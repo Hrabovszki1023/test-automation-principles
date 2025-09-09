@@ -1,3 +1,21 @@
+---
+title: Übliche Vorgehensweise um Testfälle zu automatisieren
+description: Warum zwei Übersetzungen pro Testfall Aufwand und Fehlerquellen verursachen – und wie man das vermeiden kann.
+tags:
+  - dry
+  - testfallstruktur
+  - übersetzung
+  - schlüsselwortnotation
+status: fertig
+type: artikel
+sidebar_position: 2
+editors:
+  - zoltan
+created: 2025-08-11
+updated: 2025-08-11
+rolle: Inhalt
+kapitel: DRY-Prinzip
+---
 # Übliche Vorgehensweise: Zwei Übersetzungen pro Testfall
 
 In vielen Projekten läuft die Testautomatisierung ungefähr so ab:
@@ -50,5 +68,5 @@ Ein Notationssystem, das beide Welten zusammenbringt – z. B. durch **abstrak
 Zwei Übersetzungen bedeuten doppelten Aufwand – und doppeltes Risiko für Missverständnisse.  
 Aber was, wenn man den zweiten Schritt einfach **weglassen** könnte?
 
-Im Kapitel 👉 [DRY-Prinzip: Keine Übersetzung nötig](DRY-Prinzip%20Keine%20Übersetzung%20nötig.md) zeigen wir, wie sich dieser Schritt komplett eliminieren lässt –  
+Im Kapitel 👉 [DRY-Prinzip: Keine Übersetzung nötig](Wie%20Schlüsselwörter%20die%20Brücke%20zwischen%20Fachtest%20und%20Automatisierung%20schlagen.md) zeigen wir, wie sich dieser Schritt komplett eliminieren lässt –  
 **durch schlüsselwortbasierte Testfallbeschreibung**, die direkt automatisierbar ist.
