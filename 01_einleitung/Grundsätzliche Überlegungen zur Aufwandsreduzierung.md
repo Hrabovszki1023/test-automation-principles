@@ -1,8 +1,60 @@
 ---
-status: In Bearbeitung
-tags: [lokatoren, dry, gui]
-kapitel: Testfallstruktur
-autor: Zoltán Hrabovszki
+title: Grundsätzliche Überlegung
+description:                # Kurzbeschreibung (1–2 Sätze), erscheint z. B. in GitBook als Summary
+tags: []                    # Freie Stichworte, mehrere erlaubt. z. B.: ["dry", "lokatoren", "steuerbarkeit"]
+
+# Status im Lebenszyklus der Seite (für Arbeitsorganisation)
+# Mögliche Werte:
+# - Entwurf
+# - In Bearbeitung
+# - Zur Prüfung
+# - Fertig
+# - Archiviert
+status: Fertig
+
+# Typ der Seite im Inhaltsverzeichnis (steuert Sidebar-Darstellung in GitBook/Obsidian)
+# Mögliche Werte:
+# - kapitel         → Kapitelübersicht
+# - artikel         → Ein normaler Fließtext-Artikel
+# - technik         → Detaillierte technische Erklärung oder Pattern
+# - beispiel        → Konkretes Beispiel mit Code/Diagramm
+# - notiz           → Rohentwurf oder Ideensammlung (nicht für Veröffentlichung gedacht)
+type: artikel
+
+# Kapitelnummer zur stabilen Sortierung im Treeview
+# Beispiele: 2.3, 2.4, 3.1 (für Haupt- und Unterkapitel)
+kapitel_nummer: 1.1
+
+# Optional: Position in der Sidebar (numerisch, für Sortierung in GitBook)
+# Beispiele: 1, 2, 3.5 (Zahl mit Dezimalstelle = Zwischenposition)
+sidebar_position: 1.1
+
+# Wer hat an diesem Artikel gearbeitet?
+# Auch mehrere Einträge möglich
+editors:
+  - zoltan
+
+# Automatisch vom Templater gesetzt
+created: <% tp.date.now("YYYY-MM-DD") %>
+updated: <% tp.date.now("YYYY-MM-DD") %>
+
+# Rolle im Buchkontext (Meta-Ebene)
+# Mögliche Werte:
+# - Kapitelübersicht
+# - Technik-Erläuterung
+# - Praxisbeispiel
+# - Denkmodell
+# - Werkzeugbeschreibung
+rolle: Denkmodell
+
+# Zugehöriges Hauptkapitel
+# Mögliche Werte (Stand heute):
+# - Einleitung
+# - DRY-Prinzip
+# - Beobachtbarkeit & Steuerbarkeit
+# - Test-Denkmodelle
+# - GUI-Strategien
+kapitel: Einleitung
 ---
 ---
 
@@ -52,8 +104,8 @@ Daher lohnt es sich, auch bei „Nebensächlichkeiten“ wie
 - guter **Benennung** (von Klassen, Methoden, Schritten), 
 - klarer **Skriptstruktur**
 - und durchdachter **Synchronisation** der Testumgebung
+- auf **Lesbarkeit und Nachvollziehbarkeit** zu achten.  
 
-auf **Lesbarkeit und Nachvollziehbarkeit** zu achten.  
 Denn Tests müssen nicht nur laufen – sie müssen **verständlich wartbar** sein.
 
 ---
