@@ -5,7 +5,7 @@
 2. **Testdatenverwaltung:** Wenn Testdaten in mehreren Testfällen verwendet werden, sollte die Verwaltung dieser Daten an einer zentralen Stelle erfolgen. Dies kann dazu beitragen, Redundanz zu vermeiden und sicherzustellen, dass Änderungen an den Testdaten an einer einzigen Stelle vorgenommen werden.
     
 3. **Wartung von Element-Lokatoren:** In der Testautomatisierung für Webanwendungen werden oft Element-Lokatoren verwendet, um auf Webseitenelemente zuzugreifen. Die Definition und Pflege dieser Lokatoren sollte zentralisiert erfolgen, um Konsistenz sicherzustellen und die Anpassung an Änderungen in der Benutzeroberfläche zu erleichtern. 
-   Siehe hierzu [[DRY-Prinzip Objekt-Erkennungseigenschaft]]
+   Siehe hierzu [[Objekt-Erkennungseigenschaften – die Dreifaltigkeit der Lokatoren]]
     
 4. **Konfiguration und Umgebungseinstellungen:** Wenn verschiedene Testfälle dieselben Konfigurations- oder Umgebungseinstellungen verwenden, sollten diese Informationen zentral definiert und verwaltet werden. Dies erleichtert die Aktualisierung von Einstellungen und sorgt für Konsistenz in der gesamten Testautomatisierungssuite.
     
