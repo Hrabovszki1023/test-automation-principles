@@ -1,7 +1,5 @@
-#status/entwurf
-
 ---
-title: DRY-Prinzip – Wiederholung vermeiden, Wartung erleichtern
+title: Objekt-Erkennungseigenschaften – die Dreifaltigkeit der Lokatoren
 description: Warum das DRY-Prinzip für nachhaltige Testautomatisierung unverzichtbar ist – und wie man es konkret umsetzt.
 tags:
   - dry
