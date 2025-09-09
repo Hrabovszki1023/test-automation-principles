@@ -1,0 +1,19 @@
+@startuml
+skinparam monochrome true
+skinparam shadowing false
+
+actor "Fachtester" as Fach
+rectangle "Anforderung" as A
+rectangle "Testfall in\nSchlüsselwortnotation" as K
+
+Fach --> A : liest
+Fach --> K : erstellt
+
+rectangle "Automatisierungsskript" as S
+K --> S : direkt ausführbar
+
+note bottom of S
+Kein technischer Zwischenschritt nötig
+→ keine 2. Fehlerquelle
+end note
+@enduml
