@@ -1,22 +1,64 @@
 ---
-title: DRY-Prinzip – Wiederholung vermeiden, Wartung erleichtern
-description: Warum das DRY-Prinzip für nachhaltige Testautomatisierung unverzichtbar ist – und wie man es konkret umsetzt.
-tags:
-  - dry
-  - prinzipien
-  - wartbarkeit
-  - testautomatisierung
-  - technikensammlung
-status: fertig
+title: DRY-Prinzip
+description:                # Kurzbeschreibung (1–2 Sätze), erscheint z. B. in GitBook als Summary
+tags: ["dry", "prinzipien", "wartbarkeit", "testautomatisierung", "technikensammlung"]
+
+# Status im Lebenszyklus der Seite (für Arbeitsorganisation)
+# Mögliche Werte:
+# - Entwurf
+# - In Bearbeitung
+# - Zur Prüfung
+# - Fertig
+# - Archiviert
+status: Fertig
+
+# Typ der Seite im Inhaltsverzeichnis (steuert Sidebar-Darstellung in GitBook/Obsidian)
+# Mögliche Werte:
+# - kapitel         → Kapitelübersicht
+# - artikel         → Ein normaler Fließtext-Artikel
+# - technik         → Detaillierte technische Erklärung oder Pattern
+# - beispiel        → Konkretes Beispiel mit Code/Diagramm
+# - notiz           → Rohentwurf oder Ideensammlung (nicht für Veröffentlichung gedacht)
 type: kapitel
-sidebar_position: 1
+
+# Kapitelnummer zur stabilen Sortierung im Treeview
+# Beispiele: 2.3, 2.4, 3.1 (für Haupt- und Unterkapitel)
+kapitel_nummer: 2.0
+
+# Optional: Position in der Sidebar (numerisch, für Sortierung in GitBook)
+# Beispiele: 1, 2, 3.5 (Zahl mit Dezimalstelle = Zwischenposition)
+sidebar_position: 2.0
+
+# Wer hat an diesem Artikel gearbeitet?
+# Auch mehrere Einträge möglich
 editors:
   - zoltan
-created: 2025-07-13
-updated: 2025-09-09
+
+# Automatisch vom Templater gesetzt
+created: <% tp.date.now("YYYY-MM-DD") %>
+updated: <% tp.date.now("YYYY-MM-DD") %>
+
+# Rolle im Buchkontext (Meta-Ebene)
+# Mögliche Werte:
+# - Kapitelübersicht
+# - Technik-Erläuterung
+# - Praxisbeispiel
+# - Denkmodell
+# - Werkzeugbeschreibung
 rolle: Kapitelübersicht
+
+# Zugehöriges Hauptkapitel
+# Mögliche Werte (Stand heute):
+# - Einleitung
+# - DRY-Prinzip
+# - Beobachtbarkeit & Steuerbarkeit
+# - Test-Denkmodelle
+# - GUI-Strategien
+kapitel: DRY-Prinzip
 ---
-# Kapitel: DRY-Prinzip – Wiederholung vermeiden, Wartung erleichtern
+
+
+## DRY-Prinzip – Wiederholung vermeiden, Wartung erleichtern
 
 > „Ein Problem kann man niemals mit derselben Denkweise lösen, durch die es entstanden ist.“  
 > – zugeschrieben Albert Einstein
