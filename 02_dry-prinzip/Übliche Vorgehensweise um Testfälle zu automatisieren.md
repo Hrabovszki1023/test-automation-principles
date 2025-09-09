@@ -109,5 +109,5 @@ Ein Notationssystem, das beide Welten zusammenbringt – z. B. durch **abstrak
 Zwei Übersetzungen bedeuten doppelten Aufwand – und doppeltes Risiko für Missverständnisse.  
 Aber was, wenn man den zweiten Schritt einfach **weglassen** könnte?
 
-Im Kapitel 👉 [DRY-Prinzip: Keine Übersetzung nötig](Wie%20Schlüsselwörter%20die%20Brücke%20zwischen%20Fachtest%20und%20Automatisierung%20schlagen.md) zeigen wir, wie sich dieser Schritt komplett eliminieren lässt –  
+Im Kapitel 👉 [Keine Übersetzung nötig](Wie%20Schlüsselwörter%20die%20Brücke%20zwischen%20Fachtest%20und%20Automatisierung%20schlagen.md) zeigen wir, wie sich dieser Schritt komplett eliminieren lässt –  
 **durch schlüsselwortbasierte Testfallbeschreibung**, die direkt automatisierbar ist.
