@@ -1,0 +1,72 @@
+@startuml
+skinparam componentStyle rectangle
+skinparam shadowing false
+skinparam wrapWidth 220
+skinparam defaultTextAlignment center
+
+title OKW4Robot – Architektur (Komponenten) mit „Heiliger Dreifaltigkeit“
+
+package "Robot Framework" as RF {
+  [Test Suites\n(.robot)] as Tests
+  [OKW4Robot Keywords\n(Python)] as KW
+}
+
+package "OKW Layer" as OKW {
+  [Widgets (generisch)\nAPI pro Komponententyp] as Widgets
+  [Objektlisten (YAML)\n„Heilige Dreifaltigkeit“] as YAML
+}
+
+package "Adapter-Schicht" as ADP {
+  [Adapter: javaRPC] as A_RPC
+  [Adapter: WebDriver (später)] as A_WEB
+}
+
+package "Treiber / Kommunikation" as DRV {
+  [JSON-RPC Client] as RPC_Client
+  [WebDriver Client] as WD_Client
+}
+
+package "AUT / Zielsystem" as AUT {
+  [Java Swing App\n(z. B. SwingSet3)] as SwingApp
+  [JSON-RPC Server\n(in AUT eingebettet)] as RPC_Server
+}
+
+Tests -down-> KW : ruft Keywords auf
+KW -down-> Widgets : mappt Keyword → Widget-Methode
+
+' Auflösung + Interaktionsvertrag
+Widgets -right-> YAML : resolve(Name)\n→ (Locator, Interaktionsklasse)
+
+' Delegation an Adapter/Treiber
+Widgets -down-> A_RPC : delegiert an Adapter
+Widgets -down-> A_WEB : (optional später)
+
+A_RPC -down-> RPC_Client
+A_WEB -down-> WD_Client
+
+RPC_Client -down-> RPC_Server : JSON-RPC Calls
+RPC_Server -down-> SwingApp : steuert UI-Elemente
+
+' --- Notizen zur Heiligen Dreifaltigkeit & Polymorphie ---
+note right of YAML
+  „Heilige Dreifaltigkeit“ je Objekt:
+  1) Abstrakter Lokator (fachlicher Name)
+  2) Konkreter Lokator (XPath/CSS/RPC-Handle/…)
+  3) Interaktion = Widget-Klasse
+     (definiert erlaubte Methoden wie Click,
+      SetValue, VerifyValue, Select, …)
+end note
+
+note bottom of KW
+  Keywords sind einheitlich Englisch
+  (z. B. "Select Host", "Start App", "Click")
+end note
+
+' Polymorphie-Hinweis: generisch vs. projektspezifisch
+YAML ..> Widgets : referenziert generische\noder projektspezifisch abgeleitete\nWidget-Klassen (Polymorphie)
+note bottom of OKW
+  Projektspezifische „Extrawürste“:
+  CustomWidget extends BaseWidget
+  → In YAML Interaktionsklasse = CustomWidget
+end note
+@enduml

@@ -1,0 +1,76 @@
+@startuml
+autonumber
+skinparam shadowing false
+skinparam defaultTextAlignment left
+title OKW4Robot – Sequenz: Start Host → Start App → Click Login (mit „Heiliger Dreifaltigkeit“)
+
+actor Tester
+participant "Robot Test (.robot)" as RF
+participant "OKW4Robot Keywords\n(Python)" as KW
+participant "Widgets\n(Dispatcher)" as W
+participant "Objektliste\n(YAML)" as YAML
+participant "Adapter\n(javaRPC)" as ADP
+participant "JSON-RPC Client" as RPCc
+participant "JSON-RPC Server\n(in AUT)" as RPCs
+participant "Swing App\n(SwingSet3)" as AUT
+
+== Host & App Start ==
+Tester -> RF : Select Host "javaRPC"
+RF -> KW : Keyword: Select Host "javaRPC"
+KW -> ADP : select_driver("javaRPC")
+ADP -> RPCc : init_client(config)
+RPCc -> RPCs : ping()
+RPCs --> RPCc : pong
+KW <-- ADP : driver ready
+
+Tester -> RF : Start App "SwingSet3.jar"
+RF -> KW : Keyword: Start App "SwingSet3.jar"
+KW -> ADP : start_app("SwingSet3.jar")
+ADP -> RPCc : rpc.startApp("SwingSet3.jar")
+RPCc -> RPCs : startApp(...)
+RPCs -> AUT : spawn/attach
+RPCs --> RPCc : ok
+KW <-- ADP : app ready
+
+== Interaktion: Click Login ==
+Tester -> RF : Click "LoginButton"
+RF -> KW : Keyword: Click name="LoginButton"
+
+KW -> W : click(name="LoginButton")
+
+' --- Heilige Dreifaltigkeit: Name → (Locator, Interaktionsklasse) ---
+W -> YAML : resolve("LoginButton")
+YAML --> W : (locator="...", interactionClass="Button"\noder z. B. "CustomButton")
+
+' Polymorphe Klassenwahl & Dispatch
+W -> W : select class = interactionClass\n(Button / CustomButton)
+W -> ADP : invoke(SelectedClass.click, locator)
+
+' RPC-Interaktion
+ADP -> RPCc : rpc.click(locator)
+RPCc -> RPCs : click(locator)
+RPCs -> AUT : perform click
+RPCs --> RPCc : ok
+ADP --> W : success
+W --> KW : success
+KW --> RF : PASS
+
+' Notizen
+note right of YAML
+  „Heilige Dreifaltigkeit“ je Objekt:
+  1) Abstrakter Lokator (Name)
+  2) Konkreter Lokator (XPath/CSS/RPC-Handle/…)
+  3) Interaktion = Widget-Klasse
+     (z. B. Button, TextField, ComboBox)
+  → interactionClass kann generisch oder
+    projektspezifisch (abgeleitet) sein.
+end note
+
+note over W
+  Polymorphie/Dispatch:
+  Der Dispatcher ruft Methoden der durch YAML
+  referenzierten Widget-Klasse auf – entweder
+  BaseWidget (generisch) oder eine projektspezifische
+  Ableitung (z. B. CustomButton).
+end note
+@enduml

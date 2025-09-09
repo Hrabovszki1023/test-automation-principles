@@ -1,0 +1,88 @@
+@startuml
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+title OKW4Robot – Klassenübersicht: Widgets, Adapters & „Heilige Dreifaltigkeit“
+
+' ===== YAML / Objektliste =====
+class ObjectDescriptor {
+  +name: String                ' abstrakter Lokator
+  +locator: String             ' konkreter Lokator (XPath/CSS/RPC-Handle/…)
+  +interactionClass: String    ' z. B. "Button", "CustomButton"
+}
+
+class ObjectRepository {
+  +getDescriptor(name: String): ObjectDescriptor
+}
+
+' ===== Dispatcher / Factory =====
+class WidgetDispatcher {
+  +click(name: String)
+  +setValue(name: String, value: String)
+  +verifyValue(name: String, expected: String)
+  -repo: ObjectRepository
+  -adapter: Adapter
+}
+
+WidgetDispatcher --> ObjectRepository : resolve(name)\n→ ObjectDescriptor
+WidgetDispatcher --> Adapter : delegiert Aufrufe\nmit konkretem locator
+
+' ===== Adapter-Schicht =====
+interface Adapter {
+  +click(locator: String)
+  +setValue(locator: String, value: String)
+  +getValue(locator: String): String
+}
+
+class JavaRPCAdapter implements Adapter
+class WebDriverAdapter implements Adapter
+
+' ===== Widget-Schicht =====
+abstract class BaseWidget {
+  #adapter: Adapter
+  +click(locator: String)
+  +setValue(locator: String, value: String)
+  +getValue(locator: String): String
+  +verifyValue(locator: String, expected: String)
+}
+
+class Button extends BaseWidget {
+  +click(locator: String)
+}
+
+class TextField extends BaseWidget {
+  +setValue(locator: String, value: String)
+  +getValue(locator: String): String
+}
+
+' Projektspezifische „Extrawurst“
+class CustomButton extends Button {
+  +click(locator: String)  ' überschreibt z. B. mit Retry/Focus
+}
+
+' ===== Beziehungen =====
+WidgetDispatcher ..> BaseWidget : instanziert per\ninteractionClass (Reflektion/Registry)
+BaseWidget --> Adapter : nutzt
+
+note right of ObjectDescriptor
+„Heilige Dreifaltigkeit“ je Objekt:
+1) Abstrakter Lokator (name)
+2) Konkreter Lokator (locator)
+3) Interaktion = Widget-Klasse (interactionClass)
+end note
+
+note bottom of WidgetDispatcher
+Ablauf:
+1) Descriptor holen (name → descriptor)
+2) Widget-Klasse aus descriptor.interactionClass
+3) Widget-Instanz erzeugen (mit adapter)
+4) Methodenaufruf mit descriptor.locator
+end note
+
+note bottom of Adapter
+Adapter kapseln Treiberdetails.
+Beispiele:
+- JavaRPCAdapter (Swing via JSON-RPC)
+- WebDriverAdapter (Browser)
+end note
+
+@enduml
