@@ -129,20 +129,17 @@ Wenn komplexe Abläufe nötig sind, lieber mehrere klar benannte Schritte verwen
 
 ---
 
-### 📌 Fazit
+## Fazit
 
 Abstrakte Schlüsselwörter sind ein mächtiges Werkzeug – **aber nur so gut wie ihre Benennung**.  
 Klare, eindeutige Begriffe machen den Test lesbar, wartbar – und vertrauenswürdig.
-
----
-## Fazit
 
 Abstrakte und elementare Schlüsselwörter sind zwei Seiten derselben Medaille:
 
 - Die **einen strukturieren die fachliche Sicht**,  
 - die **anderen sichern die technische Umsetzung ab**.
 
-Gemeinsam ermöglichen sie ein **robustes, wartbares und wiederverwendbares** Testdesign – ganz im Sinne des DRY-Prinzips.
+Gemeinsam ermöglichen sie ein **robustes, wartbares und wieder verwendbares** Testdesign – ganz im Sinne des DRY-Prinzips.
 
 Und das Beste: Wenn sich etwas ändert, musst du es **nur an einer Stelle** anpassen.
 

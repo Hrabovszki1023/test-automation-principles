@@ -1,6 +1,6 @@
 ---
 title: DRY-Prinzip
-description:
+description: Einleitung des DRY Prinzipes
 tags:
   - dry
   - prinzipien
@@ -11,8 +11,8 @@ status: Fertig
 type: kapitel
 editors:
   - zoltan
-created: <% tp.date.now("YYYY-MM-DD") %>
-updated: <% tp.date.now("YYYY-MM-DD") %>
+created: 2025-08-11
+updated: 2025-09-09
 rolle: Kapitelübersicht
 kapitel: DRY-Prinzip
 ---

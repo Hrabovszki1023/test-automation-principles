@@ -2,6 +2,7 @@
 
 - [Einleitung](01_einleitung/README.md)
 - [DRY-Prinzip](02_dry_prinzip/README.md)
+  - [DRY in der Testautomatisierung](02_dry-prinzip/DRY_Prinzip_in_der_Testautomatisierung)
   - [Übliche Vorgehensweise](02_dry-prinzip/Uebliche_Vorgehensweise.md)
   - [Übersetzungen vermeiden](02_dry-prinzip/Keine_Uebersetzung_noetig.md)
   - [Abstrakte und Elementare Schlüsselwörter](02_dry-prinzip/Abstrakte_und_elementare_Schluesselwoerter.md)

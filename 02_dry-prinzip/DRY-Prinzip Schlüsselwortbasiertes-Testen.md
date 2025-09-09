@@ -1,4 +1,4 @@
-#status/entwurf 
+
 In der Testfall-Notation, insbesondere im Zusammenhang mit Schlüsselwort-basiertem Testen, kann das DRY-Prinzip durch die Verwendung von abstrakten Schlüsselwörtern und Bibliotheken umgesetzt werden. Schlüsselwort-basiertes Testen bezieht sich auf eine Methode, bei der Testfälle in Form von Schlüsselwörtern oder Aktionen geschrieben werden, und diese Schlüsselwörter werden dann von einer Testautomatisierungsbibliothek interpretiert und ausgeführt.
 
 Hier sind einige Ansätze, wie das DRY-Prinzip in der Schlüsselwort-Notation angewendet werden kann:
