@@ -57,8 +57,7 @@ rolle: Kapitelübersicht
 kapitel: DRY-Prinzip
 ---
 
-
-# Warum dieser ganze Aufwand?
+## Warum dieser ganze Aufwand?
 
 Testautomatisierung klingt erstmal cool: Einmal klicken, Kaffee holen, und der Rechner prüft brav alles durch.  
 In der Praxis sieht’s aber oft anders aus: Fragile Tests, unverständliche Skripte und ständiges Nachbessern. Warum ist das so?
