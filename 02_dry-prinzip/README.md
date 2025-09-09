@@ -9,26 +9,30 @@ tags:
   - technikensammlung
 status: fertig
 type: kapitel
-sidebar_position: 2
+sidebar_position: 1
 editors:
   - zoltan
 created: 2025-07-13
-updated: 2025-07-13
+updated: 2025-09-09
 rolle: Kapitelübersicht
 ---
-
 # Kapitel: DRY-Prinzip – Wiederholung vermeiden, Wartung erleichtern
 
-> „Don’t Repeat Yourself“ – dieses Prinzip ist mehr als nur ein schlauer Spruch aus der Softwareentwicklung.
-> In der Testautomatisierung ist es **der Schlüssel**, um langfristig effizient und stabil zu arbeiten.
+> „Ein Problem kann man niemals mit derselben Denkweise lösen, durch die es entstanden ist.“  
+> – zugeschrieben Albert Einstein
 
-Das DRY-Prinzip besagt: **Vermeide Redundanz.**
-Informationen, Regeln oder Strukturen sollten **nur an einer Stelle definiert** werden. Wird dasselbe an mehreren Orten wiederholt, entstehen schnell Wartungsprobleme, Inkonsistenzen – und Frust.
+Warum dieses Zitat hier?  
+Weil es genau beschreibt, was in der Testautomatisierung ständig passiert:  
+Wir versuchen Probleme (z. B. kaputte Locators, redundante Testschritte) auf derselben Ebene zu flicken, auf der sie entstanden sind – mit noch mehr Copy & Paste, mit Workarounds, mit Auto-Healing-Zauberei.  
+Das ist so, als würde man einen Brand mit Benzin löschen wollen.
 
-In der Testautomatisierung gilt das ganz besonders:
-Tests bestehen oft aus ähnlichen Schritten, benutzen dieselben Elemente, prüfen dieselben Dinge – aber wenn man das alles mehrfach „per Hand“ schreibt oder kopiert, dann wird Pflege zur Hölle.
-
-Und genau das passiert in vielen Projekten. DRY wird nicht beachtet – und irgendwann wird fast nur noch gewartet, kaum noch Neues geschaffen.
+Die Lösung liegt eine Ebene höher: **Abstraktion.**  
+Statt jeden konkreten XPath zehnmal zu wiederholen, führen wir *eine abstrakte Definition* ein.  
+Statt Testschritte wild zusammenzukopieren, nutzen wir *Schlüsselwörter*.  
+So verschieben wir das Problem auf eine Meta-Ebene, wo es sich viel eleganter und nachhaltiger lösen lässt.
+![[einstein_dry_pyramide.svg]]
+Genau hier setzt das DRY-Prinzip an:
+**Nicht die Symptome reparieren, sondern die Ursache beseitigen – durch weniger Redundanz und mehr Abstraktion.**
 
 ---
 
@@ -44,7 +48,6 @@ Wenn die gleichen Lokatoren, Testschritte oder Daten an zehn Stellen stehen, dan
 Mit DRY reduziert sich das auf **eine einzige Stelle** – und alle Tests profitieren automatisch davon.
 
 ---
-
 ## Und der größte Fehler?
 
 Der größte Fehler ist nicht, das DRY-Prinzip falsch anzuwenden –
@@ -59,6 +62,7 @@ Aber die Quittung kommt später:
 Und genau deshalb lohnt es sich, sich einmal bewusst mit dem Prinzip auseinanderzusetzen.
 Denn wer DRY ernst nimmt, macht sich das Leben in der Testautomatisierung **spürbar leichter**.
 
+---
 ### Und das Perfide daran?
 
 Gerade in der GUI-Testautomatisierung lauert noch eine andere Gefahr:
