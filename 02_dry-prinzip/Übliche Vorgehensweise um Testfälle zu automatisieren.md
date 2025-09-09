@@ -1,5 +1,5 @@
 ---
-title: Übliche Vorgehensweise
+title: 2.1 Übliche Vorgehensweise
 description: Warum zwei Übersetzungen pro Testfall Aufwand und Fehlerquellen verursachen – und wie man das vermeiden kann.
 tags:
   - dry
@@ -9,7 +9,7 @@ tags:
 status: Fertig
 type: artikel
 kapitel_nummer: 2.1
-sidebar_position: 2
+sidebar_position: 1
 editors:
   - zoltan
 created: 2025-08-11

@@ -1,5 +1,5 @@
 ---
-title: DRY-Prinzip
+title: 2. DRY-Prinzip
 description:
 tags:
   - dry
@@ -10,7 +10,7 @@ tags:
 status: Fertig
 type: kapitel
 kapitel_nummer: 2
-sidebar_position: 1
+sidebar_position: 0
 editors:
   - zoltan
 created: <% tp.date.now("YYYY-MM-DD") %>
