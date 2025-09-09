@@ -8,13 +8,14 @@ tags:
   - wiederverwendung
 status: in Bearbeitung
 type: artikel
-sidebar_position: 3
+sidebar_position: 4
 editors:
   - zoltan
 created: 2025-08-12
 updated: 2025-08-12
 rolle: Technik-Erläuterung
 kapitel: DRY-Prinzip
+kapitel_nummer: 2
 ---
 
 # Abstrakte und elementare Schlüsselwörter – ein starkes Team

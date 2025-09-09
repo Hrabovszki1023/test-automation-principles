@@ -9,7 +9,7 @@ tags:
 status: Fertig
 type: artikel
 kapitel_nummer: 2.1
-sidebar_position: 1
+sidebar_position: 2
 editors:
   - zoltan
 created: 2025-08-11

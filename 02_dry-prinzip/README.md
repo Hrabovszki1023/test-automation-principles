@@ -10,7 +10,7 @@ tags:
 status: Fertig
 type: kapitel
 kapitel_nummer: 2
-sidebar_position: 0
+sidebar_position: 1
 editors:
   - zoltan
 created: <% tp.date.now("YYYY-MM-DD") %>
