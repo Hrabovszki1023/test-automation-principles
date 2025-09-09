@@ -1,5 +1,5 @@
 ## Definition Testfall nach ISTQB:
-![[)d Testfall#^dca4ed]]
+![[Testfall#^dca4ed]]
  
 ## Testfall etwas anders beleuchtet
 

@@ -28,7 +28,7 @@ Testautomatisierungswerkzeuge bieten unter verschiedenen Bezeichnungen wie
 * Test-Frame  
 
 jeweils eine eigene Lösung für das gleiche Problem: eine **Struktur zur zentralen Verwaltung der Objekterkennungseigenschaften**.  
-Im Kern ist das eine Liste, in der [[Abstrakte Lokatoren und konkrete Lokatoren]] verwaltet werden.  
+Im Kern ist das eine Liste, in der [[Abstrakte und Konkrete Lokatoren]] verwaltet werden.  
 
 Fachlicher Bezeichner, Lokator und GUI-Element verwenden einheitlich das gleiche Attribut.  
 Vorteile:  
