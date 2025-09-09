@@ -54,8 +54,7 @@ Der aktuelle Fokus liegt auf:
 
 Die leserfreundlich aufbereitete Version findest du hier:
 
-👉 [Zur GitBook-Version](https://dein-link.gitbook.io/test-automation-principles)  
-*(Link wird bald verfügbar sein)*
+👉 [Zur GitBook-Version](https://openkeyword.gitbook.io/test-automation-principles)  
 
 ---
 
