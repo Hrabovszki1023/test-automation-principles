@@ -1,22 +1,63 @@
 ---
-title: Übliche Vorgehensweise um Testfälle zu automatisieren
-description: Warum zwei Übersetzungen pro Testfall Aufwand und Fehlerquellen verursachen – und wie man das vermeiden kann.
-tags:
-  - dry
-  - testfallstruktur
-  - übersetzung
-  - schlüsselwortnotation
-status: fertig
+title: Übliche Vorgehensweise
+description:  Warum zwei Übersetzungen pro Testfall Aufwand und Fehlerquellen verursachen – und wie man das vermeiden kann.
+tags: ["dry", "testfallstruktur", "übersetzung", "schlüsselwortnotation"]
+
+# Status im Lebenszyklus der Seite (für Arbeitsorganisation)
+# Mögliche Werte:
+# - Entwurf
+# - In Bearbeitung
+# - Zur Prüfung
+# - Fertig
+# - Archiviert
+status: Fertig
+
+# Typ der Seite im Inhaltsverzeichnis (steuert Sidebar-Darstellung in GitBook/Obsidian)
+# Mögliche Werte:
+# - kapitel         → Kapitelübersicht
+# - artikel         → Ein normaler Fließtext-Artikel
+# - technik         → Detaillierte technische Erklärung oder Pattern
+# - beispiel        → Konkretes Beispiel mit Code/Diagramm
+# - notiz           → Rohentwurf oder Ideensammlung (nicht für Veröffentlichung gedacht)
 type: artikel
-sidebar_position: 2
+
+# Kapitelnummer zur stabilen Sortierung im Treeview
+# Beispiele: 2.3, 2.4, 3.1 (für Haupt- und Unterkapitel)
+kapitel_nummer: 2.1
+
+# Optional: Position in der Sidebar (numerisch, für Sortierung in GitBook)
+# Beispiele: 1, 2, 3.5 (Zahl mit Dezimalstelle = Zwischenposition)
+sidebar_position: 2.1
+
+# Wer hat an diesem Artikel gearbeitet?
+# Auch mehrere Einträge möglich
 editors:
   - zoltan
+
+# Automatisch vom Templater gesetzt
 created: 2025-08-11
 updated: 2025-08-11
+
+# Rolle im Buchkontext (Meta-Ebene)
+# Mögliche Werte:
+# - Kapitelübersicht
+# - Technik-Erläuterung
+# - Praxisbeispiel
+# - Denkmodell
+# - Werkzeugbeschreibung
 rolle: Inhalt
+
+# Zugehöriges Hauptkapitel
+# Mögliche Werte (Stand heute):
+# - Einleitung
+# - DRY-Prinzip
+# - Beobachtbarkeit & Steuerbarkeit
+# - Test-Denkmodelle
+# - GUI-Strategien
 kapitel: DRY-Prinzip
 ---
-# Übliche Vorgehensweise: Zwei Übersetzungen pro Testfall
+
+## Übliche Vorgehensweise: Zwei Übersetzungen pro Testfall
 
 In vielen Projekten läuft die Testautomatisierung ungefähr so ab:
 
