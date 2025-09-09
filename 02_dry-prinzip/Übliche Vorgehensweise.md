@@ -8,8 +8,6 @@ tags:
   - schlüsselwortnotation
 status: Fertig
 type: artikel
-kapitel_nummer: 2.1
-sidebar_position: 1
 editors:
   - zoltan
 created: 2025-08-11
@@ -70,5 +68,5 @@ Ein Notationssystem, das beide Welten zusammenbringt – z. B. durch **abstrak
 Zwei Übersetzungen bedeuten doppelten Aufwand – und doppeltes Risiko für Missverständnisse.  
 Aber was, wenn man den zweiten Schritt einfach **weglassen** könnte?
 
-Im Kapitel 👉 [Keine Übersetzung nötig](Wie%20Schlüsselwörter%20die%20Brücke%20zwischen%20Fachtest%20und%20Automatisierung%20schlagen.md) zeigen wir, wie sich dieser Schritt komplett eliminieren lässt –  
+Im Kapitel 👉 [Keine Übersetzung nötig](Keine%20Übersetzung%20nötig.md) zeigen wir, wie sich dieser Schritt komplett eliminieren lässt –  
 **durch schlüsselwortbasierte Testfallbeschreibung**, die direkt automatisierbar ist.

@@ -153,7 +153,7 @@ Und das Beste: Wenn sich etwas ändert, musst du es **nur an einer Stelle** anpa
 Ein großer Vorteil der Schlüsselwort-Notation ist, dass **kein technischer Übersetzungsschritt** nötig ist.  
 Damit entfällt eine häufige Fehlerquelle in klassischen Automatisierungsprozessen.
 
-📎 Siehe auch: [[Wie Schlüsselwörter die Brücke zwischen Fachtest und Automatisierung schlagen]]
+📎 Siehe auch: [[Keine Übersetzung nötig]]
 
 > 🛠️ DRY in Reinform:  
 > Was du **nicht brauchst**, kann auch **keinen Fehler verursachen**.
@@ -163,4 +163,4 @@ Damit entfällt eine häufige Fehlerquelle in klassischen Automatisierungsprozes
 
 Zur Erinnerung – so sieht die herkömmliche Vorgehensweise aus:
 
-📎 [[Übliche Vorgehensweise um Testfälle zu automatisieren#Zwei Übersetzungen = doppelte Fehlerquelle]]
+📎 [[Übliche Vorgehensweise#Zwei Übersetzungen = doppelte Fehlerquelle]]
