@@ -34,15 +34,15 @@ Diese beiden Schlüsselworttypen sind **keine Konkurrenz**, sondern **ergänzen 
 
 ---
 
-## 🔧 DRY in der Schlüsselwort-Notation umsetzen
+## DRY in der Schlüsselwort-Notation umsetzen
 
-### 🧱 1. Abstrakte Schlüsselwörter strukturieren Testfälle
+### 1. Abstrakte Schlüsselwörter strukturieren Testfälle
 
 Ein abstraktes Schlüsselwort ist eine **fachlich verständliche Beschreibung** eines Schritts, z. B. `Artikel in Warenkorb legen`.
 
 Diese können in Bibliotheken zentral definiert werden und sind wiederverwendbar. Sie erleichtern die Zusammenarbeit mit Fachtestern und fördern die Lesbarkeit der Tests.
 
-### 🧰 2. Wiederverwendbare Bibliotheken elementarer Schlüsselwörter
+### 2. Wiederverwendbare Bibliotheken elementarer Schlüsselwörter
 
 Elementare Schlüsselwörter wie `Click`, `SetValue`, `VerifyValue` bilden die **technische Basis** und werden in wiederverwendbaren Bibliotheken gekapselt.
 
@@ -54,7 +54,7 @@ Diese Kapselung ermöglicht:
 
 > 👷‍♂️ Je öfter ein technisches Schlüsselwort wiederverwendet wird, desto robuster wird es.
 
-### 🔄 3. Kein technischer Zwischenschritt nötig
+### 3. Kein technischer Zwischenschritt nötig
 
 In klassischen Projekten gibt es oft diesen Ablauf:
 
@@ -69,7 +69,7 @@ Mit der Schlüsselwort-Notation entfällt er vollständig:
 
 > 💡 Kein Zwischenschritt = keine zweite Fehlerquelle
 
-### 📦 4. Parameterisierung für maximale Flexibilität
+### 4. Parameterisierung für maximale Flexibilität
 
 Schlüsselwörter können Parameter enthalten – z. B. `${Suchbegriff}` oder `${Benutzername}` – um sie in unterschiedlichen Kontexten wiederzuverwenden.
 
@@ -77,9 +77,9 @@ Das fördert die Wiederverwendbarkeit und reduziert die Anzahl notwendiger Schl�
 
 ---
 
-## 🛠️ Tipps für abstrakte Schlüsselwörter
+## Tipps für abstrakte Schlüsselwörter
 
-### 💡 1. Wähle sprechende und eindeutige Bezeichner
+### 1. Wähle sprechende und eindeutige Bezeichner
 
 - **Kurz**, aber nicht kryptisch
 - **Eindeutig**, ohne Interpretationsspielraum
@@ -87,7 +87,7 @@ Das fördert die Wiederverwendbarkeit und reduziert die Anzahl notwendiger Schl�
 
 > ❗ Unklare Begriffe wie „ausführen“ führen zu Verwirrung – und zu Fehlern.
 
-### 🧱 2. Keine Verschachtelung abstrakter Schlüsselwörter
+### 2. Keine Verschachtelung abstrakter Schlüsselwörter
 
 Ein guter Testfall ist wie ein Drehbuch:
 
@@ -99,7 +99,7 @@ Ein guter Testfall ist wie ein Drehbuch:
 
 ---
 
-## 🚫 Testfälle direkt in Code schreiben?
+## Testfälle direkt in Code schreiben?
 
 Natürlich kann man Testfälle auch direkt in Java, JS oder Python schreiben. Aber:
 
@@ -114,7 +114,7 @@ Mit Schlüsselworten dagegen bleibt der fachliche Testfall erhalten – das Fram
 
 ---
 
-## 📌 Fazit
+## Fazit
 
 **Abstrakte und elementare Schlüsselwörter sind Partner, keine Gegensätze.**
 

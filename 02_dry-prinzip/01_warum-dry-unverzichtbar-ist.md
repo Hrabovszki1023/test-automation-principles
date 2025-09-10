@@ -27,7 +27,7 @@ Und jede unnötige Wiederholung erhöht den Aufwand **exponentiell mit jedem neu
 
 ---
 
-## 💡 Was bedeutet DRY konkret in der Testautomatisierung?
+## Was bedeutet DRY konkret in der Testautomatisierung?
 
 Das DRY-Prinzip besagt, dass **jede Information nur einmal im System vorkommen sollte**.  
 Das bedeutet: Wiederkehrende Logik, Daten oder Strukturen sollten **zentral definiert** und von überall aus **wiederverwendet** werden.
@@ -46,7 +46,7 @@ Das bedeutet: Wiederkehrende Logik, Daten oder Strukturen sollten **zentral defi
 
 ---
 
-## 🚫 Was passiert, wenn DRY ignoriert wird?
+## Was passiert, wenn DRY ignoriert wird?
 
 Wenn jede Automatisierung „für sich“ gebaut wird:
 
@@ -57,7 +57,7 @@ Wenn jede Automatisierung „für sich“ gebaut wird:
 
 ---
 
-## ✅ DRY als Erfolgsfaktor für nachhaltige Automatisierung
+## DRY als Erfolgsfaktor für nachhaltige Automatisierung
 
 Ein gutes DRY-konformes Design sorgt dafür, dass du Änderungen **nur an einer Stelle** machen musst:
 
@@ -72,7 +72,7 @@ Ein gutes DRY-konformes Design sorgt dafür, dass du Änderungen **nur an einer 
 
 ---
 
-## 🧱 DRY geht über Code hinaus
+## DRY geht über Code hinaus
 
 Das DRY-Prinzip lässt sich auf **alle Ebenen der Automatisierung** anwenden:
 

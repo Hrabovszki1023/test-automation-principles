@@ -15,7 +15,6 @@ created: 2025-08-12
 updated: 2025-08-12
 rolle: Technik-Erläuterung
 kapitel: DRY-Prinzip
-kapitel_nummer: 2
 ---
 
 
