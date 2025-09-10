@@ -18,7 +18,7 @@ rolle: Kapitelübersicht
 kapitel: DRY-Prinzip
 ---
 
-## DRY-Prinzip – Wiederholung vermeiden, Wartung erleichtern
+# DRY-Prinzip – Wiederholung vermeiden, Wartung erleichtern
 
 > „Ein Problem kann man niemals mit derselben Denkweise lösen, durch die es entstanden ist.“  
 > – zugeschrieben Albert Einstein
