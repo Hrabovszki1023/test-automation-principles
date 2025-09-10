@@ -18,8 +18,6 @@ kapitel: DRY-Prinzip
 kapitel_nummer: 2
 ---
 
----
-
 # Abstrakte und elementare Schlüsselwörter – ein starkes Team
 
 In der Testfall-Notation, insbesondere im Zusammenhang mit Schlüsselwort-basiertem Testen, ist das DRY-Prinzip ein entscheidender Erfolgsfaktor. Es sorgt für Wiederverwendbarkeit, klare Strukturen und reduzierte Wartungskosten. Dabei unterscheidet man zwei Arten von Schlüsselwörtern:

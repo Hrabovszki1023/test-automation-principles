@@ -28,7 +28,7 @@ Wartung, Erweiterung und Wiederverwendung profitieren direkt davon.
 
 ---
 
-## 🔁 Wo MBT konkret DRY umsetzt
+## Wo MBT konkret DRY umsetzt
 
 1. **Zentrale Modelle statt mehrfacher Testfallbeschreibungen**
 Anstatt ähnliche Testschritte immer wieder in Prosatestfällen zu beschreiben,  
@@ -52,7 +52,7 @@ auch das ist DRY: Der gleiche „Klick“ oder „Eingabeschritt“ wird nur ein
 
 ---
 
-## 🧠 Fazit
+## Fazit
 
 > Modellbasiertes Testen ist nicht nur ein Testdesign-Ansatz –  
 > sondern **ein automatisierter Weg, das DRY-Prinzip in der Praxis umzusetzen**.
@@ -69,7 +69,7 @@ die daraus erzeugten Tests aktualisieren sich automatisch.
 
 ---
 
-## 🔗 Siehe auch
+## Siehe auch
 
 - 📎 [Abstrakte und elementare Schlüsselwörter – ein starkes Team](../elementare-schluesselwoerter/README.md)
 - 📎 [Testfallbeschreibung ohne technische Übersetzung](../keine-uebersetzung-noetig/README.md)
