@@ -1,5 +1,6 @@
 ---
 title: Warum DRY für Testautomatisierung so entscheidend ist
+sidebar_position: 2
 description: Motivation und Praxisnutzen des DRY-Prinzips in der Testautomatisierung – vom Grundsatz bis zur Anwendung in Framework, Testdaten und GUI-Objekten.
 tags:
   - dry
@@ -11,7 +12,6 @@ status: fertig
 type: artikel
 rolle: Motivation
 kapitel: DRY-Prinzip
-sidebar_position: 1
 editors:
   - zoltan
 created: 2025-09-09

@@ -1,5 +1,6 @@
 ---
 title: Objekt-Erkennungseigenschaften – die Dreifaltigkeit der Lokatoren
+sidebar_position: 8
 description: Warum das DRY-Prinzip für nachhaltige Testautomatisierung unverzichtbar ist – und wie man es konkret umsetzt.
 tags:
   - dry
@@ -9,12 +10,11 @@ tags:
   - technikensammlung
 status: fertig
 type: kapitel
-sidebar_position: 3
 editors:
   - zoltan
 created: 2025-07-13
 updated: 2025-09-09
-rolle: Kapitelübersicht
+rolle: Anwendungsbeispiel
 ---
 
 ## Vermeidung von Aufwänden bei den Objekt-Erkennungseigenschaften

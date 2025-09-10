@@ -1,5 +1,6 @@
 ---
 title: Keine Übersetzung nötig
+sidebar_position: 6
 description: Warum zwei Übersetzungen pro Testfall Aufwand und Fehlerquellen verursachen – und wie man das vermeiden kann.
 tags:
   - dry
@@ -8,7 +9,6 @@ tags:
   - schlüsselwortnotation
 status: Fertig
 type: artikel
-kapitel_nummer: 2.2
 editors:
   - zoltan
 created: 2025-08-11

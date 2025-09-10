@@ -1,5 +1,6 @@
 ---
 title: Abstrakte und elementare Schlüsselwörter – ein starkes Team
+sidebar_position: 3
 beschreibung: Wie sich abstrakte und elementare Schlüsselwörter in der Testautomatisierung ergänzen – und warum sie gemeinsam DRY ermöglichen.
 tags:
   - schlüsselwörter
@@ -8,7 +9,6 @@ tags:
   - wiederverwendung
 status: in Bearbeitung
 type: artikel
-sidebar_position: 4
 editors:
   - zoltan
 created: 2025-08-12

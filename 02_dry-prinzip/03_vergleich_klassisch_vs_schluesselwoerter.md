@@ -1,3 +1,23 @@
+---
+title: Vergleich klassisch vs Schluesselwoerter
+sidebar_position: 4
+beschreibung:
+tags:
+  - schlüsselwörter
+  - abstraction
+  - dry
+  - wiederverwendung
+status: in Bearbeitung
+type: artikel
+editors:
+  - zoltan
+created: 2025-08-12
+updated: 2025-08-12
+rolle: Technik-Erläuterung
+kapitel: DRY-Prinzip
+kapitel_nummer: 2
+---
+
 
 | Aspekt                                 | Klassischer Ansatz                          | Schlüsselwort-Notation (DRY)                          |
 |----------------------------------------|---------------------------------------------|-------------------------------------------------------|

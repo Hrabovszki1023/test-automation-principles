@@ -1,5 +1,6 @@
 ---
 title: DRY-Prinzip im modellbasierten Testen (MBT)
+sidebar_position: 7
 description: Wie modellbasiertes Testen das DRY-Prinzip automatisch unterstützt – und was das für Design und Wartbarkeit bedeutet.
 tags:
   - dry

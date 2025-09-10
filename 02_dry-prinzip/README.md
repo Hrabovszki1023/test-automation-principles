@@ -1,5 +1,6 @@
 ---
 title: DRY-Prinzip
+sidebar_position: 1
 description: Einleitung des DRY Prinzipes
 tags:
   - dry
