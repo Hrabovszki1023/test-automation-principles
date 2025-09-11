@@ -1,7 +1,7 @@
 # Inhaltsverzeichnis
 - [Einleitung](01_einleitung/README.md)
 - [Grundlagen](00_Grundlagen/README.md)
-  - [Begriffsklärung der Schlüsselwörter](00_Grundlagen/schluesselwoerter-begriffsklaerung.md)
+  - [Begriffsklärung der Schlüsselwörter](00_grundlagen/schluesselwoerter-begriffsklaerung.md)
 - [DRY-Prinzip](02_dry_prinzip/README.md)
   - [Warum DRY für Testautomatisierung so entscheidend ist](02_dry-prinzip/01_warum-dry-unverzichtbar-ist.md)
   - [Abstrakte und elementare Schlüsselwörter – ein starkes Team](02_dry-prinzip/02_Abstrakte_und_elementare_Schluesselwoerter.md)
