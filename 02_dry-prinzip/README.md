@@ -1,6 +1,6 @@
 ---
 title: DRY-Prinzip
-sidebar_position: 1.0
+sidebar_position: 1
 description: Einleitung des DRY Prinzipes
 tags:
   - dry
@@ -18,7 +18,7 @@ rolle: Kapitelübersicht
 kapitel: DRY-Prinzip
 ---
 
-# DRY-Prinzip – Wiederholung vermeiden, Wartung erleichtern
+##  Wiederholung vermeiden, Wartung erleichtern
 
 > „Ein Problem kann man niemals mit derselben Denkweise lösen, durch die es entstanden ist.“  
 > – zugeschrieben Albert Einstein

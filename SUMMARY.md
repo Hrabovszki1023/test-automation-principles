@@ -1,27 +1,20 @@
 # Inhaltsverzeichnis
-
 - [Einleitung](01_einleitung/README.md)
-
 - [DRY-Prinzip](02_dry_prinzip/README.md)
-
-  - [DRY in der Testautomatisierung](02_dry-prinzip/01_warum-dry-unverzichtbar-ist.md)
-  - [Abstrakte und Elementare Schlüsselwörter](02_dry-prinzip/02_Abstrakte_und_elementare_Schluesselwoerter.md)
+  - [Warum DRY für Testautomatisierung so entscheidend ist](02_dry-prinzip/01_warum-dry-unverzichtbar-ist.md)
+  - [Abstrakte und elementare Schlüsselwörter – ein starkes Team](02_dry-prinzip/02_Abstrakte_und_elementare_Schluesselwoerter.md)
   - [Vergleich Klassisch vs Schlüsselwörter](02_dry-prinzip/03_vergleich_klassisch_vs_schluesselwoerter.md)
   - [Übliche Vorgehensweise](02_dry-prinzip/04_Uebliche_Vorgehensweise.md)
   - [Keine Übersetzung nötig](02_dry-prinzip/05_Keine_Uebersetzung_noetig.md)
   - [DRY und MBT](02_dry-prinzip/06_DRY_und_MBT)
   - [Die Dreifaltigkeit der Lokatoren](02_dry-prinzip/07_die_Dreifaltigkeit_der_Lokatoren.md)
-  
 - [Beobachtbarkeit/Steurbarkeit](03_beobachtbarkeit-steuerbarkeit/README.md)
-
 - [Testfallstruktur und Abstarktion](04_testfallstruktur-und-abstraktion/README.md)
-
   - [Abstrakte und Konkrete Lokatoren](04_testfallstruktur-und-abstraktion/Abstrakte und Konkrete Lokatoren.md)
   - [Abstrakter Testfall](04_testfallstruktur-und-abstraktion/Abstrakter Testfall.md)
   - [Konkreter Testfall](04_testfallstruktur-und-abstraktion/Konkreter Testfall.md)
   - [Die Definition eines Testfalls](04_testfallstruktur-und-abstraktion/Die Definition eines Testfalls.md)
-  - [AÄquivalenzklassentest](04_testfallstruktur-und-abstraktion/Äquivalenzklassentest.md)
-
+  - [Äquivalenzklassentest](04_testfallstruktur-und-abstraktion/Äquivalenzklassentest.md)
 - [Test Denkmodelle](05_test-denkmodelle/README.md)
   - [Keine Verkettung von Testfällen](05_test-denkmodelle/Keine Verkettung von Testfällen.md)
   - [Testfälle sollten autonom sein](05_test-denkmodelle/Testfälle sollten autonom sein.md)

@@ -18,7 +18,7 @@ created: 2025-09-09
 updated: 2025-09-09
 ---
 
-# Warum DRY für Testautomatisierung so entscheidend ist
+## Warum DRY für Testautomatisierung so entscheidend ist
 
 Das DRY-Prinzip („Don't Repeat Yourself“) ist einer der **zentralen Hebel**, um den **Wartungsaufwand** in der Testautomatisierung dauerhaft zu reduzieren.
 
