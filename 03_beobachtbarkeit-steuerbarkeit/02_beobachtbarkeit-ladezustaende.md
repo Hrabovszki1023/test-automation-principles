@@ -1,4 +1,3 @@
-
 ---
 title: Beobachtbarkeit von Ladezuständen (Spinner, Progress, ARIA busy)  
 description: Readiness-Signale definieren und zuverlässig prüfen – statt fixer Sleeps.  
@@ -15,9 +14,7 @@ type: technik
 **Bezug zur Heiligen Dreifaltigkeit (Was–Wie–Tut):**
 
 - **Was:** Seite/Widget (abstrakter Lokator, z. B. `TravelExpenses` / `Destination`)
-    
 - **Tut:** Keyword (`Click`, `Set Value`, `Verify Value`)
-    
 - **Wie:** Adapter prüft **Readiness** (keine Spinner, network idle, sichtbar/enabled …) und führt aus.
     
 
