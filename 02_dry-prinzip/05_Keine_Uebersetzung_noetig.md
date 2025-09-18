@@ -64,21 +64,29 @@ Und genau das ist die Essenz des DRY-Prinzips:
 
 ## Beispiel für einen schlüsselwortbasierten Testfall
 
-```
-ÖffneAnwendung( "Reisekosten" )
-WähleAus( "Menü", "Neue Abrechnung" ) 
-GibEin( "Reisedatum", "2025-05-12" ) 
-GibEin( "Zielort", "Berlin" ) 
-Klicke( "Speichern" )
-PrüfeWert( "Statusmeldung", "Abrechnung gespeichert" )
+
+```robot
+*** Settings ***
+Documentation     Keyword-driven test with abstract locators. Click is generic; Menu has special handling.
+
+*** Test Cases ***
+Create New Expense Report
+    Open Application      Travel Expenses
+    Select Menu           New Expense Report
+    Set Value             Travel Date        2025-05-12
+    Set Value             Destination        Berlin
+    Click                 Save
+    Verify Value          Status Message     Expense report saved
 ```
 
-Jeder Schritt nutzt ein **abstraktes Schlüsselwort** (`GibEin`, `Klicke`, `PrüfeWert`) und einen **abstrakten Lokator** wie `"Zielort"` – also einen funktionalen Namen, der vom Testautor verwendet wird.
+Jeder Schritt nutzt ein **abstraktes Schlüsselwort** (`Set Value`, `Click`, `Verify Value`, ggf.  `Select Menu`) und einen **abstrakten Lokator** wie `"Zielort"` – also einen funktionalen Namen, der vom Testautor verwendet wird.
 
-> Zur Laufzeit werden diese abstrakten Lokatoren von der Schlüsselwortbibliothek in **konkrete Lokatoren** (z. B. XPath oder CSS-Selektoren) übersetzt – der Fachtester muss sich darum nicht kümmern.
+> Zur Laufzeit werden diese abstrakten Lokatoren von der Schlüsselwortbibliothek in **konkrete Lokatoren** (z. B. XPath oder CSS-Selektoren) übersetzt – der Fachtester muss sich darum nicht kümmern. 
+> Siehe hierzu: [Abstrakte_und_Konkrete_Lokatoren](../04_testfallstruktur-und-abstraktion/Abstrakte_und_Konkrete_Lokatoren.md)
 
 Das Ergebnis:  
 Der Test ist **leicht verständlich, wiederverwendbar und wartungsarm**.
+
 ## Fazit
 
 Reduktion auf Null heißt:  
