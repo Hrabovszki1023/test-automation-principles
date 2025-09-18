@@ -34,13 +34,13 @@ Neue Testfälle sind durchaus erwünscht, aber für einen verlässlichen Verglei
 
 Bei neuen Testfällen ist es wichtig, dass diese auch neue Aspekte des Testlings abprüfen. Sie müssen systematisch abgeleitet werden.
 
-- [Was auch immer](Äquivalenzklassentest)
+- [Was auch immer](Aequivalenzklassentest.md)
 - [[Pairwise Methode]] - Erläuterung unter http://de.wikipedia.org/wiki/Pairwise-Methode
 - [[White-Box Test]] - Erläuterung unter http://de.wikipedia.org/wiki/White-Box-Test
 - etc.
 
 ## Organisation von Testfällen
-[[Die Verkettung von Testfällen sollte vermieden werden]]
+[[Keine Verkettung von Testfällen]]
   
 ### Testfall Zuständigkeit
 Jeder Testfall sollte nur für eine bestimmte Testling Eigenschaft zuständig sein. Das hat den Vorteil, wenn so ein Testfall fehlschlägt, dann ist sofort erkennbar welche Eigenschaft betroffen ist. 
