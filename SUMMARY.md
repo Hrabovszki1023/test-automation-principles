@@ -11,6 +11,7 @@
   - [DRY und MBT](02_dry-prinzip/06_DRY_und_MBT)
   - [Die Dreifaltigkeit der Lokatoren](02_dry-prinzip/07_die_Dreifaltigkeit_der_Lokatoren.md)
 - [Beobachtbarkeit/Steurbarkeit](03_beobachtbarkeit-steuerbarkeit/README.md)
+  - [Adaptive Synchronisation statt fixer Sleeps](03_beobachtbarkeit-steuerbarkeit/01 Adaptive Synchronisation statt fixer Sleeps.md)
 - [Testfallstruktur und Abstarktion](04_testfallstruktur-und-abstraktion/README.md)
   - [Abstrakte und Konkrete Lokatoren](04_testfallstruktur-und-abstraktion/Abstrakte_und_Konkrete_Lokatoren.md)
   - [Abstrakter Testfall](04_testfallstruktur-und-abstraktion/Abstrakter_Testfall.md)
