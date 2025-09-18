@@ -9,7 +9,7 @@
   - [Übliche Vorgehensweise](02_dry-prinzip/04_Uebliche_Vorgehensweise.md)
   - [Keine Übersetzung nötig](02_dry-prinzip/05_Keine_Uebersetzung_noetig.md)
   - [DRY und MBT](02_dry-prinzip/06_DRY_und_MBT)
-  - [Die Dreifaltigkeit der Lokatoren](07_die_Dreifaltigkeit_der_Lokatoren_alt.md)
+  - [Die Dreifaltigkeit der Lokatoren](02_dry-prinzip/07_die_Dreifaltigkeit_der_Lokatoren.md)
 - [Beobachtbarkeit/Steurbarkeit](03_beobachtbarkeit-steuerbarkeit/README.md)
 - [Testfallstruktur und Abstarktion](04_testfallstruktur-und-abstraktion/README.md)
   - [Abstrakte und Konkrete Lokatoren](04_testfallstruktur-und-abstraktion/Abstrakte_und_Konkrete_Lokatoren.md)
