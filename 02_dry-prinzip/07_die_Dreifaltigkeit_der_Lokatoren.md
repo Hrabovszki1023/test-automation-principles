@@ -1,77 +1,180 @@
 ---
-title: Objekt-Erkennungseigenschaften – die Dreifaltigkeit der Lokatoren
-sidebar_position: 8
-description: Warum das DRY-Prinzip für nachhaltige Testautomatisierung unverzichtbar ist – und wie man es konkret umsetzt.
-tags:
-  - dry
-  - prinzipien
-  - wartbarkeit
-  - testautomatisierung
-  - technikensammlung
-status: fertig
-type: kapitel
-editors:
-  - zoltan
+title: Die Dreifaltigkeit der Lokatoren
+description: "Kurz gesagt: Abstrakter Lokator (Was), Konkreter Lokator (Wie), Interaktion/Keyword-Schicht (Tut). Drei Rollen – eine Einheit."
+tags: [dry, prinzipien, wartbarkeit, testautomatisierung, technikensammlung, lokatoren, abstraktion, robot-framework, objektliste]
+status: Fertig
+type: artikel
+editors: [zoltan]
 created: 2025-07-13
-updated: 2025-09-09
+updated: 2025-09-18
 rolle: Anwendungsbeispiel
 ---
 
-## Vermeidung von Aufwänden bei den Objekt-Erkennungseigenschaften
+## Worum es geht
 
-Testautomatisierungswerkzeuge bieten unter verschiedenen Bezeichnungen wie 
-* Objekt-Repository 
-* GUI-Frame
-* GUI-Map 
-* Test-Frame  
+Testautomatisierungswerkzeuge kennen viele Namen für dasselbe Prinzip: _Objekt-Repository_, _GUI-Map_, _Test-Frame_ … Am Ende ist es immer eine **zentrale Objektliste**, in der wir **abstrakte** und **konkrete** Lokatoren pflegen und die **Interaktionen** darauf aufsetzen.
 
-jeweils eine eigene Lösung für das gleiche Problem: eine **Struktur zur zentralen Verwaltung der Objekterkennungseigenschaften**.  
-Im Kern ist das eine Liste, in der [[Abstrakte und Konkrete Lokatoren]] verwaltet werden.  
+**Ziel:** Eine Stelle der Wahrheit (Single Source of Truth) für Lokatoren → **DRY**.
 
-Fachlicher Bezeichner, Lokator und GUI-Element verwenden einheitlich das gleiche Attribut.  
-Vorteile:  
-* Lokatoren können vorab erstellt werden  
-* Lokatoren sind mit einem Attribut leicht erstellbar  
-* Lokatoren sind in der Ausführung schneller  
-* Im Fehlerfall ist die Identifizierung der Objekte einfach, da alle Komponenten einheitlich benannt sind  
-* Kommunikation zwischen Tester, Entwickler und Anforderungsanalytiker wird vereinfacht  
+{% hint style="info" %}
+Details zur Web-Umsetzung inkl. Robot-Beispielen & YAML:
+{% content-ref url="../abstrakte-und-konkrete-lokatoren/README.md" %}
+[Abstrakte und konkrete Lokatoren (Web)](../abstrakte-und-konkrete-lokatoren/README.md)
+{% endcontent-ref %}
+{% endhint %}
+
+
 
 ---
 
-## Die „Heilige Dreifaltigkeit“ der Objektlisten
+## Die drei Rollen
 
-Wer in der Theologie aufgepasst hat, kennt die Formel: **Vater, Sohn und Heiliger Geist** sind drei Personen – und doch ein einziger Gott.  
-Keine Sorge: Wir steigen hier nicht in eine Glaubensdebatte ein. Aber die Struktur eignet sich hervorragend als Analogie, um die Rollen in unseren Objektlisten zu erklären.
+### 1) Abstrakter Lokator – der funktionale Name
+
+Der Ursprung und die Idee: ein sprechender Bezeichner wie `Username`, `Password`, `Login Button`.
+
+- **Bedeutung** im Testfall, keine Technik
+    
+- Stabil bei UI-Änderungen
+    
+- Wird zur Laufzeit in „konkret“ aufgelöst
+    
+
+### 2) Konkreter Lokator – die technische Adresse
+
+Das Abstrakte wird „greifbar“: CSS/XPath/`data-test-id` etc.
+
+- Beispiel (Web, bevorzugt CSS & Test-IDs):
+    
+    - `css=[data-test-id="username"]`
+    - `css=[data-test-id="password"]`
+    - `css=[data-test-id="login-btn"]`
+    
+- Liegt **zentral** in der Objektliste (z. B. YAML)
+    
+
+### 3) Interaktion/Keyword-Schicht – die Aktion
+
+Unsichtbar, aber spürbar: Keywords wie `Set Value`, `Click`, `Verify Text` machen den Testfall lebendig. Sie **verwenden abstrakte Namen** und fragen die konkreten Selektoren aus der Objektliste ab.
 
 ---
 
-### Drei – und doch eins
+## „Drei – und doch eins“ (Analogie)
 
-- **Der Vater → Abstrakter Lokator**  
-  Der Ursprung und die Idee: ein funktionaler Name wie `LoginButton` oder `UserNameField`.  
-  Noch völlig losgelöst von Technik, einfach nur die Bedeutung im Testfall.
+- **Abstrakt** weiß _was_ etwas bedeutet, aber nicht _wo_ es ist.
+    
+- **Konkret** kennt _wo_, aber ohne _Bedeutung_.
+    
+- **Interaktion** kann _handeln_, braucht aber _was_ und _wo_.
+    
 
-- **Der Sohn → Konkreter Lokator**  
-  Das Abstrakte wird „Fleisch“: aus dem Namen wird ein XPath, ein CSS-Selektor oder eine TestID.  
-  Erst dadurch kann die Maschine die GUI-Elemente tatsächlich finden.
-
-- **Der Heilige Geist → Interaktionsklasse**  
-  Unsichtbar, aber spürbar: die Aktionen (`Click()`, `SetValue()`, `VerifyValue()`) machen den Testfall lebendig.  
-  Ohne den Geist gäbe es nur tote Namen und Koordinaten – mit ihm wird wirklich etwas bewegt.
+👉 Erst zusammen ist es eine **lebendige Einheit**.
 
 ---
 
-### Das Ganze ist mehr als die Summe der Teile
+## Robot-Style (englische Keywords) – Web-fokussiert
 
-- Ein **abstrakter Lokator** allein ist nutzlos: er weiß, *was* etwas bedeutet, aber nicht, *wo* es ist.  
-- Ein **konkreter Lokator** allein ist brüchig: er kennt das *Wo*, aber ohne Bedeutung.  
-- Eine **Interaktionsklasse** allein klickt ins Leere, wenn sie nicht weiß, *auf was*.  
+### Login – Minimalbeispiel
 
-👉 Erst zusammen ergeben die drei Rollen eine funktionsfähige Einheit – so wie die Dreifaltigkeit in der Theologie eine Einheit bildet.  
+```robot
+*** Test Cases ***
+Login With Valid Credentials
+    Select Window    Login
+    Set Value        Username           Admin_1
+    Set Value        Password           Secret_1
+    Click            Login Button
+    Verify Text      Welcome Message    Welcome
+```
+
+Weiterführende Beispiele & komplette YAML-Struktur:  [Abstrakte und konkrete Lokatoren (Web)](../04_testfallstruktur-und-abstraktion/Abstrakte_und_Konkrete_Lokatoren.md)
+
+### Checkbox – als 2-Wert-Element (fachlich lesbar)
+
+```robot
+*** Test Cases ***
+Accept Terms
+    Select Window    Registration
+    Select           Terms    Checked
+    Click            Submit Button
+    Verify Text      Toast Message    Registration completed
+```
+
+> Konvention: Für Checkboxes verwenden wir **`Select <Name> <Checked|Unchecked>`** (statt true/false).
+
+### Dropdown / Select
+
+```robot
+*** Test Cases ***
+Select Country In Registration
+    Select Window    Registration
+    Select Option    Country Dropdown    Germany
+    Verify Value     Country Dropdown    Germany
+```
 
 ---
 
-### Diagramm
+## Objektliste (YAML) – Abstrakt → Konkret (Web)
+
+```yaml
+Login:
+  Window:
+    locator: css=[data-test-id="login-dialog"]
+
+  Username:
+    locator: css=[data-test-id="username"]
+
+  Password:
+    locator: css=[data-test-id="password"]
+
+  Login Button:
+    locator: css=[data-test-id="login-btn"]
+
+  Welcome Message:
+    locator: css=[data-test-id="welcome-message"]
+
+Registration:
+  Terms:
+    locator: css=[data-test-id="accept-terms"]
+  Submit Button:
+    locator: css=[data-test-id="submit"]
+  Toast Message:
+    locator: css=[data-test-id="toast"]
+
+  Country Dropdown:
+    locator: css=[data-test-id="country"]
+```
+
+**Best Practices:**
+
+- **Bevorzugt**: `data-test-id`/`data-testid` (stabil, semantisch)
+    
+- Möglichst **CSS statt XPath** (kürzer, schneller, lesbarer)
+- Keine text-/layout-abhängigen Hacks
+- Einheitliche, sprechende Namen in der ganzen Kette (Test, Doku, Objektliste)
+
+**Siehe auch:**  [Abstrakte und konkrete Lokatoren (Web)](../04_testfallstruktur-und-abstraktion/Abstrakte_und_Konkrete_Lokatoren.md)
+
+---
+
+## Technischer Kontrast (nur zur Einordnung)
+
+Auf der reinen Selenium-Ebene würden die konkreten Lokatoren direkt verwendet. In unserem Ansatz macht das die Keyword-Schicht (und liest aus YAML).
+
+```java
+WebElement username = driver.findElement(By.cssSelector("[data-test-id='username']"));
+WebElement password = driver.findElement(By.cssSelector("[data-test-id='password']"));
+WebElement loginBtn = driver.findElement(By.cssSelector("[data-test-id='login-btn']"));
+WebElement welcome  = driver.findElement(By.cssSelector("[data-test-id='welcome-message']"));
+
+username.sendKeys("Admin_1");
+password.sendKeys("Secret_1");
+loginBtn.click();
+assertTrue(welcome.getText().contains("Welcome"));
+```
+
+---
+
+## Diagramm (Trinitäts-Dreieck)
 
 Zur besseren Veranschaulichung nutzen wir das klassische „Trinitätsdreieck“ – angepasst an unsere Objektlisten:
 
@@ -85,47 +188,40 @@ So wird klar: jede Rolle ist **eigenständig und darf nicht verwechselt werden**
 
 ---
 
-### Exkurs: Zombie-Automatisierung
+## Exkurs: Zombie-Automatisierung
 
-⚠️ **Achtung: falsches Leben!**  
-
-Viele Teams konzentrieren sich nur auf das Sichtbare – Hauptsache, es klickt und tippt!  
-Aber wenn nur die Interaktionsklasse im Fokus steht, entsteht eine **Zombie-Automatisierung**:  
-- Sie sieht lebendig aus, weil Buttons bewegt werden und Screenshots entstehen.  
-- Doch innerlich stirbt das Projekt, weil Abstrakt und Konkret fehlen.  
-
-**Echte Lebendigkeit** in der Automatisierung entsteht nur, wenn **abstrakte Lokatoren, konkrete Lokatoren und Interaktionen** zusammenspielen.  
-Alles andere ist ein Projekt auf dem Weg ins Grab.
+Wenn nur „irgendwas klickt“, aber Abstrakt und Konkret fehlen, wirkt die Suite lebendig, **stirbt** aber innerlich: hohe Wartung, fragile Tests, Intransparenz. **Lebendig** wird es erst im Dreiklang: Abstrakt + Konkret + Interaktion.
 
 ---
 
-### Seitenhieb: POM – das scheinheilige Modell
+## Seitenhieb: POM – das scheinheilige Modell
 
-Das klassische **Page Object Model (POM)** wirkt auf den ersten Blick ordentlich:  
-Alle Elemente einer Seite liegen schön gesammelt in einer Klasse.  
-Doch genau hier beginnt das Problem:
+POM sammelt oft alles in einer Klasse: Lokatoren, Interaktionen **und** (häufig) Logik. Ergebnis: **Vermischung**, **Kopplung**, **Anti‑DRY**.
 
-- **Alles in einem Topf:** Lokatoren, Testlogik und Interaktionen werden vermischt.  
-- **Kein klares Rollenverständnis:** Abstrakt, konkret und interaktiv verschwimmen zu einer undurchsichtigen Suppe.  
-- **Hohe Kopplung:** Änderungen in der GUI ziehen weite Kreise, weil alles aneinanderhängt.  
+**Unser Gegenentwurf:**
 
-👉 Im Ergebnis passiert das Gegenteil von dem, was wir wollen:  
-- Tests werden **nicht wartbarer**, sondern fragiler.  
-- Wiederverwendung wird **nicht gefördert**, sondern blockiert.  
-- DRY wird **nicht eingehalten**, sondern verletzt.
+- **Abstrakt** (fachliche Namen) getrennt von **Konkret** (Selektoren)
+    
+- **Interaktionen** als eigenständige Keyword-Schicht
+    
+- Zentrale Objektliste statt verteilter Seitenschnipsel
+    
 
-🙏 **POM – das scheinheilige Modell**  
-Das Page Object Model tritt gerne auf wie eine religiöse Wahrheit: *„So muss man Automatisierung bauen.“*  
-Doch wer genauer hinsieht, merkt schnell: Das Modell ist **scheinheilig**.  
-Es predigt Trennung, liefert aber Vermischung.  
-Es verspricht Wartbarkeit, erzeugt aber Kopplung.  
-Es wirkt ordentlich, tötet aber auf Dauer die Testautomatisierung.  
-
-Die **wahre Dreifaltigkeit** unserer Objektlisten zeigt, wie es richtig geht:  
-**Abstrakt, konkret und interaktiv – sauber getrennt, aber untrennbar vereint.**
+➡️ Ziel: _Wartbar_, _wiederverwendbar_, _transparent_.
 
 ---
 
-> 💡 **Merksatz:**  
-> Abstrakt, konkret und interaktiv – drei verschiedene Rollen.  
-> Zusammen bilden sie die „lebendige Einheit“ unserer Testautomatisierung.
+## Verweise
+
+- **Testfallstruktur und Abstarktion**: → [Abstrakte und konkrete Lokatoren (Web)](../04_testfallstruktur-und-abstraktion/Abstrakte_und_Konkrete_Lokatoren.md)
+    
+- **Keyword-Referenz (engl.)**: `Select Window`, `Set Value`, `Click`, `Verify Text`, `Verify Value`, `Select Option`, `Select <Checked|Unchecked>` (eigene Seite)
+    
+
+---
+
+## Merksatz
+
+**Abstrakt, konkret, interaktiv** – drei verschiedene Rollen. **Zusammen** bilden sie die lebendige Einheit unserer Testautomatisierung.
+
+
