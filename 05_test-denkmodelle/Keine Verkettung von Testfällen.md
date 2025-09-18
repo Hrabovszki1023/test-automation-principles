@@ -1,6 +1,6 @@
 Testfall: Verkettung
 
-[[Testfälle sollten autonom sein]] und die Verkettung von Testfällen sollte vermieden werden, da dies mehrere Nachteile mit sich bringt:
+[[Testfaelle sollten autonom sein]] und die Verkettung von Testfällen sollte vermieden werden, da dies mehrere Nachteile mit sich bringt:
 
 1. **Fehlende Isolation von Fehlern:** Wenn Testfälle verkettet sind und der erste Testfall scheitert, kann dies zu Fehlinterpretationen führen. Die nachfolgenden Testfälle können zwar korrekt sein, aber aufgrund der Verkettung wird der Gesamttestlauf als fehlgeschlagen betrachtet. Dies erschwert die genaue Lokalisierung und Behebung von Fehlern.
 
