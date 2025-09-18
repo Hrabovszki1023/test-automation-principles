@@ -40,7 +40,7 @@ Bei neuen Testfällen ist es wichtig, dass diese auch neue Aspekte des Testlings
 - etc.
 
 ## Organisation von Testfällen
-[[Keine Verkettung von Testfällen]]
+[[../05_test-denkmodelle/01_Keine_Verkettung_von_Testfaellen]]
   
 ### Testfall Zuständigkeit
 Jeder Testfall sollte nur für eine bestimmte Testling Eigenschaft zuständig sein. Das hat den Vorteil, wenn so ein Testfall fehlschlägt, dann ist sofort erkennbar welche Eigenschaft betroffen ist. 

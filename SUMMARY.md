@@ -18,5 +18,5 @@
   - [Die Definition eines Testfalls](04_testfallstruktur-und-abstraktion/Definition_Testfall.md)
   - [Aequivalenzklassentest](04_testfallstruktur-und-abstraktion/Aequivalenzklassentest.md)
 - [Test Denkmodelle](05_test-denkmodelle/README.md)
-  - [Keine Verkettung von Testfällen](05_test-denkmodelle/Keine Verkettung von Testfällen.md)
-  - [Testfälle sollten autonom sein](05_test-denkmodelle/Testfaelle sollten autonom sein.md)
+  - [Keine Verkettung von Testfällen](05_test-denkmodelle/01_Keine_Verkettung_von_Testfaellen.md)
+  - [Testfälle sollten autonom sein](05_test-denkmodelle/02_Testfaelle_sollten_autonom_sein.md)
