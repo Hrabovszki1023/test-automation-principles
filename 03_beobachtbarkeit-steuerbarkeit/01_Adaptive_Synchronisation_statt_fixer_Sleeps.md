@@ -47,7 +47,7 @@ Und sie ist **nie „richtig“**: mal zu kurz (flaky), mal zu lang (Zeitverschw
 
 ## Skalierungsformel
 
-$$Verschwendete Zeit (s)=w⋅n⋅T⋅R\text{Verschwendete Zeit (s)} = w \cdot n \cdot T \cdot R$$
+Verschwendete Zeit $$(s)=w⋅n⋅T⋅R\text{Verschwendete Zeit (s)} = w \cdot n \cdot T \cdot R$$
 
 - $$w$$ = feste Wartezeit pro Vorkommen (Sekunden)
     
@@ -55,18 +55,18 @@ $$Verschwendete Zeit (s)=w⋅n⋅T⋅R\text{Verschwendete Zeit (s)} = w \cdot 
     
 - $$T$$ = Anzahl Tests pro Lauf
     
-- $$R$$R = Anzahl Läufe im Zeitraum
+- $$R$$ = Anzahl Läufe im Zeitraum
     
 
-> Zusätzlich: Flakes erzeugen Re-Runs → $$**nn**$$ wächst faktisch, ohne irgendeine Verbesserung.
+> Zusätzlich: Flakes erzeugen Re-Runs → $$**n**$$ wächst faktisch, ohne irgendeine Verbesserung.
 
 ## Rechenbeispiele (typische Szenarien)
 
 |Szenario|Annahmen|Verschwendung pro Lauf|
-|---|---|---|
-|**Login-Sleep**|w=10w=10 s, n=1n=1, T=5,000T=5{,}000|10×1×5,000=50,00010 \times 1 \times 5{,}000 = 50{,}000 s → **13 h 53 m 20 s**|
-|**Drei kleine Sleeps**|w=2w=2 s, n=3n=3, T=5,000T=5{,}000|2×3×5,000=30,0002 \times 3 \times 5{,}000 = 30{,}000 s → **8 h 20 m**|
-|**Viele Mini-Sleeps**|w=1w=1 s, n=10n=10, T=5,000T=5{,}000|1×10×5,000=50,0001 \times 10 \times 5{,}000 = 50{,}000 s → **13 h 53 m 20 s**|
+|----------------------|---|---|
+|**Login-Sleep**       |$$w=10$$ s, $$n=1, T=5,000$$    |$$10×1×5,000=50,00010 \times 1 \times 5{,}000 = 50{,}000$$ s → **13 h 53 m 20 s**|
+|**Drei kleine Sleeps**|$$w=2$$ s, $$n=3, T=5,000$$     |$$2×3×5,000=30,0002 \times 3 \times 5{,}000 = 30{,}000$$ s → **8 h 20 m**|
+|**Viele Mini-Sleeps** |$$w=1$$ s, $$n=10n=10, T=5,000$$ |$$1×10×5,000=50,0001 \times 10 \times 5{,}000 = 50{,}000$$ s → **13 h 53 m 20 s**|
 
 > Parallelisierung senkt nur die **Wandzeit**; **Kosten** und **Queue-Zeit** bleiben: die Sekunden werden nur auf mehr Maschinen verteilt.
 
@@ -182,8 +182,3 @@ Verify Value    Status Message    Expense report saved
     
 
 ---
-
-> Tipp für GitBook: Math funktioniert mit `$$…$$` (wie oben). Falls Math deaktiviert ist, schreib die Formel alternativ in einer Codezeile:  
-> `Verschwendete Zeit (s) = w * n * T * R`
-
-Wenn du willst, packe ich dir dazu noch eine **Mini-Grafik** (PlantUML/mermaid) „Kosten explodieren linear mit w, n, T, R“.
