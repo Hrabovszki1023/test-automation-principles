@@ -86,9 +86,8 @@ Das DRY-Prinzip lässt sich auf **alle Ebenen der Automatisierung** anwenden:
 
 ## 📎 Siehe auch
 
-- 🔗 [[07_die_Dreifaltigkeit_der_Lokatoren]]
-- 🔗 [[Abstrakte und elementare Schlüsselwörter – ein starkes Team]]
-- 🔗 [[Wie Schlüsselwörter die Brücke zwischen Fachtest und Automatisierung schlagen]]
+- 🔗 [Die Dreifaltigkeit der Lokatoren](./07_die_Dreifaltigkeit_der_Lokatoren.md)
+- 🔗 [Abstrakte und elementare Schlüsselwörter](02_Abstrakte_und_elementare_Schluesselwoerter.md)
 
 ---
 
