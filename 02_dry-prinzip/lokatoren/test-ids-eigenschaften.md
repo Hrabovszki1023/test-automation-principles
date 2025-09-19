@@ -163,10 +163,3 @@ kunde.suche.absenden
 
 Eine gute Test-ID ist **eindeutig, stabil, sprechend, neutral, zentral gepflegt und generierbar**.  
 Sie ist das **Verbindungsstück** zwischen abstraktem Bezeichner (Vater) und Interaktion (Heiliger Geist) – die **Fleischwerdung** der Automatisierung. ✨
-
-```
-
----
-
-👉 Soll ich dir als Nächstes die Seite **`kontext-scoping.md`** entwerfen (Select Window, relativ suchen, DRY im Generator)?
-```

@@ -133,10 +133,3 @@ Kontext-Scoping bedeutet:
 
 Damit wird das **Fenster zur Klammer**, die alles zusammenhält –  
 und das DRY-Prinzip bleibt gewahrt.
-
-```
-
----
-
-Soll ich als Nächstes die Seite **`generator-prinzip.md`** vorbereiten (wie die Fenster-ID + Kind-IDs zusammengesetzt werden, inkl. Mini-Codebeispiel für einen Generator)?
-```
