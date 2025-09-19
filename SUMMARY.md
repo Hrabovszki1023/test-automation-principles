@@ -10,6 +10,16 @@
   - [Keine Übersetzung nötig](02_dry-prinzip/05_Keine_Uebersetzung_noetig.md)
   - [DRY und MBT](02_dry-prinzip/06_DRY_und_MBT)
   - [Die Dreifaltigkeit der Lokatoren](02_dry-prinzip/07_die_Dreifaltigkeit_der_Lokatoren.md)
+
+  - [DRY bei Lokatoren](02_dry-prinzip/lokatoren/README.md)
+    - [Mindestkriterien für Test-IDs](02_dry-prinzip/lokatoren/test-ids-checkliste.md)
+    - [Eigenschaften guter Test-IDs](02_dry-prinzip/lokatoren/test-ids-eigenschaften.md)
+    - [Kontext-Scoping (Übersicht)](02_dry-prinzip/lokatoren/kontext-scoping/README.md)
+      - [Prinzip](02_dry-prinzip/lokatoren/kontext-scoping/prinzip.md)
+      - [Umsetzung](02_dry-prinzip/lokatoren/kontext-scoping/umsetzung.md)
+    - [Generator-Prinzip](02_dry-prinzip/lokatoren/generator-prinzip.md)
+    - [Beispiele aus Swing & Web](02_dry-prinzip/lokatoren/beispiele.md)
+
 - [Beobachtbarkeit/Steuerbarkeit](03_beobachtbarkeit-steuerbarkeit/README.md)
   - [Adaptive Synchronisation statt fixer Sleeps](03_beobachtbarkeit-steuerbarkeit/01_Adaptive_Synchronisation_statt_fixer_Sleeps.md)
   - [Beobachtbarkeit von Ladezuständen](03_beobachtbarkeit-steuerbarkeit/02_beobachtbarkeit-ladezustaende.md)
