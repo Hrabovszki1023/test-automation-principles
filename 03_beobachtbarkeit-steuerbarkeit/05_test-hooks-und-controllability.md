@@ -258,8 +258,7 @@ Hooks + Observability ergeben den **Readiness-Contract**:
 *** Test Cases ***
 Create New Expense Report (with Hooks)
     Enable Test Mode
-    Fast Login As       alice
-    Wait Until Page Ready
+    Fast Login As       alice    # Wait Until Page Ready ist implicit 
     Select Menu         New Expense Report
     Set Value           Destination        Berlin
     Click               Save
