@@ -314,7 +314,6 @@ Verify Value    Status Message    Expense report saved
 - Keine `Sleep`/`Wait Until ...` im Testfall
 - Keine Spinner-Heuristiken im Testfall 
 - Keine konkreten Selektoren in Tests (nur abstrakte Lokatoren)
-    
 
 ---
 
