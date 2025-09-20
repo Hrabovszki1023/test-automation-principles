@@ -14,6 +14,7 @@
   - [DRY bei Lokatoren](02_dry-prinzip/lokatoren/README.md)
     - [Mindestkriterien für Test-IDs](02_dry-prinzip/lokatoren/test-ids-checkliste.md)
     - [Eigenschaften guter Test-IDs](02_dry-prinzip/lokatoren/test-ids-eigenschaften.md)
+    - [Kritik am Auto-Healing von Lokatoren](02_dry-prinzip/lokatoren/auto-healing-kritik.md)
     - [Kontext-Scoping (Übersicht)](02_dry-prinzip/lokatoren/kontext-scoping/README.md)
       - [Prinzip](02_dry-prinzip/lokatoren/kontext-scoping/prinzip.md)
       - [Umsetzung](02_dry-prinzip/lokatoren/kontext-scoping/umsetzung.md)
