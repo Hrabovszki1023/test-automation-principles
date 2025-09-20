@@ -11,10 +11,6 @@ status: In Bearbeitung
 type: technik
 ---
 
-voll gut — ich hab dir den Text **bereinigt, straffer gegliedert und GitBook-kompatibel** formatiert (inkl. sauberem Formel-Block und Codefences). Du kannst das 1:1 ersetzen.
-
----
-
 # Adaptive Synchronisation statt fixer Sleeps
 
 **These:** Fixe Wartezeiten sind ein Anti-Pattern. Sie entstehen, wenn **Beobachtbarkeit** (Signale) und **Steuerbarkeit** (Kontrollen) fehlen.
