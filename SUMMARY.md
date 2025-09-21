@@ -20,7 +20,8 @@
       - [Umsetzung](02_dry-prinzip/lokatoren/kontext-scoping/umsetzung.md)
     - [Generator-Prinzip](02_dry-prinzip/lokatoren/generator-prinzip.md)
     - [Beispiele aus Swing & Web](02_dry-prinzip/lokatoren/beispiele.md)
-
+  - [Modelle & MBT](02_dry-prinzip/modelle-mbt.md)
+  - [Templates & Defaults](02_dry-prinzip/templates-defaults.md)
 - [Beobachtbarkeit/Steuerbarkeit](03_beobachtbarkeit-steuerbarkeit/README.md)
   - [Adaptive Synchronisation statt fixer Sleeps](03_beobachtbarkeit-steuerbarkeit/01_Adaptive_Synchronisation_statt_fixer_Sleeps.md)
   - [Beobachtbarkeit von Ladezuständen](03_beobachtbarkeit-steuerbarkeit/02_beobachtbarkeit-ladezustaende.md)
