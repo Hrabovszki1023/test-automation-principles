@@ -8,7 +8,7 @@
   - [Vergleich Klassisch vs Schlüsselwörter](02_dry-prinzip/03_vergleich_klassisch_vs_schluesselwoerter.md)
   - [Übliche Vorgehensweise](02_dry-prinzip/04_Uebliche_Vorgehensweise.md)
   - [Keine Übersetzung nötig](02_dry-prinzip/05_Keine_Uebersetzung_noetig.md)
-  - [DRY und MBT](02_dry-prinzip/06_DRY_und_MBT)
+  - [DRY und MBT](02_dry-prinzip/06_DRY_und_MBT.md)
   - [Die Dreifaltigkeit der Lokatoren](02_dry-prinzip/07_die_Dreifaltigkeit_der_Lokatoren.md)
 
   - [DRY bei Lokatoren](02_dry-prinzip/lokatoren/README.md)
